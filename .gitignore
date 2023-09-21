@@ -1,13 +1,24 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
+# Git
+.git/
+.gitignore
+
+# Python
 *.py[cod]
+__pycache__/
+/setup.cfg
+settings.py
 *$py.class
+
+# JavaScript/Node.js
+node_modules*
+package-lock.json
 
 # C extensions
 *.so
 
 # Distribution / packaging
 .Python
+bin/
 build/
 develop-eggs/
 dist/
@@ -50,6 +61,15 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+.pytype
+*sponge_log.xml
+system_tests/local_test_setup
+credentials.json
+
+# Google APIs
+client_secret.json
+tokens.json
+storage.json
 
 # Translations
 *.mo
@@ -70,6 +90,10 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+docs.metadata
+
+# Virtual environment
+env/
 
 # PyBuilder
 .pybuilder/
@@ -158,3 +182,12 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# IDEs/editors
+*.sw[op]
+*~
+.vscode
+.idea/
+
+# Mac
+.DS_Store
