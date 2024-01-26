@@ -1,0 +1,14 @@
+{
+  "name": "helloworld-nodejs",
+  "version": "0.0.1",
+  "description": "Node.js App Engine sample app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "@wescpy",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
