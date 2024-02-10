@@ -13,6 +13,7 @@ Directory | API families
 --- | ---
 `apps` | [Google Workspace](http://developers.google.com/gsuite) ("GWS"; formerly G Suite and Google Apps)
 `cloud` | [Google Cloud](http://cloud.google.com) (Platform; "GCP")
+`gemini` | [Gemini models API](http://cloud.google.com)
 `maps` | [Google Maps](http://developers.google.com/maps) (Platform; "GMP")
 `youtube` | [YouTube](http://developers.google.com/youtube)
 `multi` | (multi-product sample apps) [_N/A at this time_]
@@ -33,8 +34,12 @@ App | Sample | Blog post
 [`apps/drive_list.mjs`](http://github.com/wescpy/gsuite-apis-intro/blob/master/nodejs/drive_list.mjs) (other repo) | Display first 100 files/folders in Google Drive (Node.js ES Module JS [`import`]) | [OAuth client ID 3](https://dev.to/wescpy/getting-started-using-google-apis-workspace-33-2me0)
 [`cloud/language/nlp_sent_query.py`](/cloud/language/nlp_sent_query.py) | Sentiment analysis of text using Natural Language API w/lower-level _platform_ Google APIs client library | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
 [`cloud/language/nlp_sent_query-gcp.py`](/cloud/language/nlp_sent_query-gcp.py) | Sentiment analysis of text using Natural Language API w/higher-level _product_ GCP client library | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
-[`cloud/appengine/nodejs`](/cloud/appengine/nodejs) | Node.js App Engine "Hello World!" sample app | [Exploring GAE]()
-[`cloud/appengine/python3`](/cloud/appengine/python3) | Python 3 App Engine "Hello World!" sample app | [Exploring GAE]()
+[`cloud/appengine/nodejs`](/cloud/appengine/nodejs) | Node.js App Engine "Hello World!" sample app | Exploring GAE (_TBD_)
+[`cloud/appengine/python3`](/cloud/appengine/python3) | Python 3 App Engine "Hello World!" sample app | Exploring GAE (_TBD_)
+[`gemini/gemtxt-simple-gai.py`](/gemini/gemtxt-simple-gai.py) | Google AI Gemini API Python sample app | A _real_ "Hello World!" for Gemini API (_TBD_)
+[`gemini/gemtxt-simple-gai.js`](/gemini/gemtxt-simple-gai.js) | Google AI Gemini API (CommonJS) Node.js sample app (`.js`) | A _real_ "Hello World!" for Gemini API (_TBD_)
+[`gemini/gemtxt-simple-gai.mjs`](/gemini/gemtxt-simple-gai.mjs) | Google AI Gemini API (modern JS/ECMAScript modules) Node.js sample app (`.mjs`) | A _real_ "Hello World!" for Gemini API (_TBD_)
+[`gemini/gemtxt-simple-gcp.py`](/gemini/gemtxt-simple-gcp.py) | GCP Vertex AI Gemini API Python sample app | A _real_ "Hello World!" for Gemini API (_TBD_)
 [`maps/maps_loc_query.py`](/maps/maps_loc_query.py) | Geolocate (public) address with Maps Geocoding API | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
 [`youtube/yt_video_query.py`](/youtube/yt_video_query.py) | Query for (public) YouTube videos (Python) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
 [`youtube/yt_video_query.js`](/youtube/yt_video_query.js) | Query for (public) YouTube videos (Node.js) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
