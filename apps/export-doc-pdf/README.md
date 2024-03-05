@@ -1,7 +1,7 @@
 # "Exporting Google Docs documents as PDF" code samples
 
 ## Introduction
-This repo contains developer code samples from a blog post covering how to export Google Docs documents as PDF (_coming soon_) featured on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
+This repo contains developer code samples from a [blog post covering how to export Google Docs documents as PDF](https://dev.to/wescpy/export-google-docs-as-pdf-without-the-docs-api-9o4) featured on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
 
 | :memo: Python 2 and 3 supported |
 |:---------------------------|
@@ -22,9 +22,9 @@ This repo contains developer code samples from a blog post covering how to expor
 
 
 ## Code samples
-App | Description
+Sample | Description
 --- | ---
-[`python/drive_export_doc_pdf.py`](python/drive_export_doc_pdf.py) | Python version usinusing new auth libs (`google.auth`)
+[`python/drive_export_doc_pdf.py`](python/drive_export_doc_pdf.py) | Python version using new auth libs (`google.auth`)
 [`python/drive_export_doc_pdf-old.py`](python/drive_export_doc_pdf-old.py) | Python version using old auth libs (`oauth2client`)
 [`nodejs/drive_export_doc_pdf.js`](nodejs/drive_export_doc_pdf.js) | CommonJS Node.js/JavaScript version
 [`nodejs/drive_export_doc_pdf.mjs`](nodejs/drive_export_doc_pdf.mjs) | Modern JavaScript/ECMAScript module
