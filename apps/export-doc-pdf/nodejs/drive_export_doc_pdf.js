@@ -11,8 +11,8 @@ const process = require('process');
 const {authenticate} = require('@google-cloud/local-auth');
 const {google} = require('googleapis');
 
-const CREDENTIALS_PATH = path.join(process.cwd(), 'client_secret.json');
-const TOKEN_PATH = path.join(process.cwd(), 'storage.json');
+const CLNT_ID_SCRT = path.join(process.cwd(), 'client_secret.json');
+const OAUTH_TOKENS = path.join(process.cwd(), 'storage.json');
 const SCOPES = ['https://www.googleapis.com/auth/drive.readonly'];
 const MIMETYPE = 'application/pdf';
 const FILENAME = 'Merged form letter';
@@ -24,7 +24,7 @@ const FILENAME = 'Merged form letter';
  */
 async function loadSavedCredentialsIfExist() {
   try {
-    const content = await fs.readFile(TOKEN_PATH);
+    const content = await fs.readFile(OAUTH_TOKENS);
     const credentials = JSON.parse(content);
     return google.auth.fromJSON(credentials);
   } catch (err) {
@@ -39,7 +39,7 @@ async function loadSavedCredentialsIfExist() {
  * @return {Promise<void>}
  */
 async function saveCredentials(client) {
-  const content = await fs.readFile(CREDENTIALS_PATH);
+  const content = await fs.readFile(CLNT_ID_SCRT);
   const keys = JSON.parse(content);
   const key = keys.installed || keys.web;
   const payload = JSON.stringify({
@@ -51,7 +51,7 @@ async function saveCredentials(client) {
     token_expiry: client.credentials.token_expiry,
     scopes: client.credentials.scopes,
   });
-  await fs.writeFile(TOKEN_PATH, payload);
+  await fs.writeFile(OAUTH_TOKENS, payload);
 }
 
 /**
@@ -64,7 +64,7 @@ async function authorize() {
   if (client) return client;
   client = await authenticate({
     scopes: SCOPES,
-    keyfilePath: CREDENTIALS_PATH,
+    keyfilePath: CLNT_ID_SCRT,
   });
   if (client.credentials) await saveCredentials(client);
   return client;
