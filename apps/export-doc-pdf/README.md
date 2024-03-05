@@ -24,9 +24,9 @@ This repo contains developer code samples from a blog post covering how to expor
 ## Code samples
 App | Description
 --- | ---
-[`python/drive_export_doc_pdf.py`](/python/drive_export_doc_pdf.py) | Python version usinusing new auth libs (`google.auth`)
-[`python/drive_export_doc_pdf-old.py`](/python/drive_export_doc_pdf-old.py) | Python version using old auth libs (`oauth2client`)
-[`nodejs/drive_export_doc_pdf.js`](/nodejs/drive_export_doc_pdf.js) | CommonJS Node.js/JavaScript version
-[`nodejs/drive_export_doc_pdf.mjs`](/nodejs/drive_export_doc_pdf.mjs) | Modern JavaScript/ECMAScript module
+[`python/drive_export_doc_pdf.py`](python/drive_export_doc_pdf.py) | Python version usinusing new auth libs (`google.auth`)
+[`python/drive_export_doc_pdf-old.py`](python/drive_export_doc_pdf-old.py) | Python version using old auth libs (`oauth2client`)
+[`nodejs/drive_export_doc_pdf.js`](nodejs/drive_export_doc_pdf.js) | CommonJS Node.js/JavaScript version
+[`nodejs/drive_export_doc_pdf.mjs`](nodejs/drive_export_doc_pdf.mjs) | Modern JavaScript/ECMAScript module
 <figcaption><i>Featured code samples</i></figcaption>
 
