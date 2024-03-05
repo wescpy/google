@@ -1,4 +1,4 @@
-# POST:         https://dev.to/wescpy/export-google-docs-as-pdf-without-the-docs-api-9o4...
+# POST:         https://dev.to/wescpy/export-google-docs-as-pdf-without-the-docs-api-9o4
 # FILE:         drive_export_doc_pdf-old.py
 # COPYRIGHT:    (c)2024 CyberWeb Consulting LLC
 # LICENSE:      apache.org/licenses/LICENSE-2.0
