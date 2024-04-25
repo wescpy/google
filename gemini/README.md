@@ -1,6 +1,6 @@
 # Google Gemini API code samples
 
-These are the code samples that are found in the blog post series covering the Gemini API.
+These are the code samples that are found in the [blog post series introducing the Gemini API](https://dev.to/wescpy/series/27183).
 
 ## Code samples
 App | Description | Platform | Model | Language
