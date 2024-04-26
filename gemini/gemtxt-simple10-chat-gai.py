@@ -20,12 +20,13 @@ PROMPTS = ('Describe a cat in a few sentences',
     'most friendly cat breeds for a family with small children?'
 )
 MODEL = 'gemini-1.0-pro-latest'
-print(f'** GenAI text: %r model\n' % MODEL)
+print('** GenAI text: %r model\n' % MODEL)
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel(MODEL)
 chat = model.start_chat()
 for prompt in PROMPTS:
-    print('    USER: %r\n' % prompt)
+    print('\n    USER:', prompt)
     response = chat.send_message(prompt)
-    print('    MODEL: %r\n' % response.text)
+    print('\n    MODEL:', response.text)
+print()

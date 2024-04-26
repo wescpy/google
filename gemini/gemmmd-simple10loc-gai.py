@@ -16,9 +16,9 @@ from PIL import Image
 import google.generativeai as genai
 from settings import API_KEY
 
-IMG = 'dome-waterfall-small.jpg'  # SOURCE: Wesley Chun (CC-BY-4.0)
+IMG = 'dome-waterfall.jpg'  # SOURCE: Wesley Chun (CC-BY-4.0)
 DATA = Image.open(IMG)
-PROMPT = "What airport is this at, and what's the waterfall's name?"
+PROMPT = "Where is this located, and what's the waterfall's name?"
 MODEL = 'gemini-1.0-pro-vision-latest'
 print('** GenAI multimodal: %r model & prompt %r\n' % (MODEL, PROMPT))
 
