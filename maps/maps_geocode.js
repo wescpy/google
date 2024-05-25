@@ -12,19 +12,26 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import dotenv from "dotenv";
-import { GoogleGenerativeAI } from '@google/generative-ai';
+/**
+ * maps_geocode.js -- geocode address in Google Maps
+ */
+require('dotenv').config();
+const { Client } = require("@googlemaps/google-maps-services-js");
 
-dotenv.config()
-const PROMPT = 'Describe a cat in a few sentences';
-const MODEL = 'gemini-pro';
-console.log(`** GenAI text: '${MODEL}' model & prompt '${PROMPT}'\n`)
+const ADDRESS = '1600 Amphitheatre Pkwy 94043';
+const GMAPS = new Client();
+const args = {
+  params: {
+    key: process.env.API_KEY,
+    address: ADDRESS,
+  }
+};
 
 async function main() {
-  const genAI = new GoogleGenerativeAI(process.env.API_KEY);
-  const model = genAI.getGenerativeModel({model: MODEL});
-  const result = await model.generateContent(PROMPT);
-  console.log(await result.response.text());
+  const rsp = await GMAPS.geocode(args);
+  const res = rsp.data.results[0];
+  const geo = res.geometry.location;
+  console.log(`** Geocode for "${ADDRESS}": (${geo.lat}, ${geo.lng})`);
 }
 
 main();

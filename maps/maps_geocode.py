@@ -10,11 +10,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+'''
+maps_geocode.py -- geocode address in Google Maps
+'''
 from __future__ import print_function
 import googlemaps
 from settings import API_KEY
 
 ADDRESS = '1600 Amphitheatre Pkwy 94043'
 GMAPS = googlemaps.Client(key=API_KEY)
-geocode = GMAPS.geocode(ADDRESS)[0]['geometry']['location']
-print('** Geocode for address %r: (%s, %s)' % (ADDRESS, geocode['lat'], geocode['lng']))
+rsp = GMAPS.geocode(ADDRESS)[0]
+geo = rsp['geometry']['location']
+print('** Geocode for %r: (%s, %s)' % (ADDRESS, geo['lat'], geo['lng']))
