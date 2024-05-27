@@ -48,8 +48,13 @@ App | Sample | Blog post
 [`gemmmd-simple10loc-gai.py`](/gemini/gemmmd-simple10loc-gai.py) | Google AI Gemini 1.0 Pro Vision Latest | [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7)
 [`gemmmd-simple10url-gai.py`](/gemini/gemmmd-simple10url-gai.py) | Google AI Gemini 1.0 Pro Vision Latest | [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7)
 &nbsp; | &nbsp; | &nbsp;
-[`maps/maps_loc_query.py`](/maps/maps_loc_query.py) | Geolocate (public) address with Maps Geocoding API | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
+[`maps/maps_geocode.py`](/maps/maps_geocode.py) | Geolocate address with Maps Geocoding API (Python) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
+[`maps/maps_geocode.js`](/maps/maps_geocode.js) | Geolocate address with Maps Geocoding API (CommonJS) Node.js | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
+[`maps/maps_geocode.mjs`](/maps/maps_geocode.mjs) | Geolocate address with Maps Geocoding API (modern JS/ECMAScript module) Node.js | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
+[`maps/maps_tzone.py`](/maps/maps_geocode.py) | Geolocate address & get time zone with Maps Geocoding & Time Zone APIs (Python) | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
+[`maps/maps_wlkdir.py`](/maps/maps_geocode.py) | Look up walking directions with Maps Directions API (Python) | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 [`youtube/yt_video_query.py`](/youtube/yt_video_query.py) | Query for (public) YouTube videos (Python) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
+
 [`youtube/yt_video_query.js`](/youtube/yt_video_query.js) | Query for (public) YouTube videos (Node.js) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
 <figcaption><i>Code sample table of contents</i></figcaption>
 

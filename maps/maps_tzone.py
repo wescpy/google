@@ -11,7 +11,7 @@
 # limitations under the License.
 
 '''
-maps_tzone.py -- get Google Maps location time zone
+maps_tzone.py -- geocode address and get Google Maps time zone
 '''
 from __future__ import print_function
 import googlemaps
@@ -23,7 +23,7 @@ rsp = GMAPS.geocode(ADDRESS)[0]['geometry']['location']
 rsp = GMAPS.timezone((rsp['lat'], rsp['lng']))
 
 offset = rsp['rawOffset'] + rsp['dstOffset']
-sign = '-' if offset < 0. else '+'
+sign = '-' if offset < 0 else '+'
 offset, frac = divmod(abs(offset), 3600)
 frac_str = str(round(frac/3600, 2))[1:] if frac else ''
 tz_abbr = ''.join(c[0] for c in rsp['timeZoneName'].split())
