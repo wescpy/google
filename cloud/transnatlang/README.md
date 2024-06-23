@@ -4,13 +4,16 @@ These are the code samples found in the language-oriented post covering both GCP
 
 ## Code samples
 App | Platform | Credentials | Client libraries | Auth libraries
---- | --- | --- | ---
+--- | --- | --- | --- | ---
 [`transnatlang-svcacct-gcp.py`](transnatlang-svcacct-gcp.py) | Python | ADC (service account or OAuth client ID) | Product | Current/new
 [`transnatlang-svcacct-gcp.js`](transnatlang-svcacct-gcp.js) | Node.js (CommonJS) | ADC (service account or OAuth client ID) | Product | Current/new
 [`transnatlang-svcacct-gcp.mjs`](transnatlang-svcacct-gcp.mjs) | Node.js (modern JS/ECMAScript module) | ADC (service account or OAuth client ID) | Product | Current/new
 [`transnatlang-apikey-old.py`](transnatlang-apikey-old.py) | Python | API key | Platform | Old
 
-_Product_ client libraries are those created for each (GCP) product whereas the [original _platform_ client libraries](https://developers.google.com/api-client-library) are meant to support Google APIs from multiple product families. By default, these client libraries use Application Default Credentials (ADC) to access GCP APIs. Depending on the execution environment, ADC will either point to service account or OAuth client ID credentials.
+_Product_ client libraries are those created for each (GCP) product. By default, these client libraries use Application Default Credentials (ADC) to access GCP APIs. Depending on the execution environment, ADC will either point to service account or OAuth client ID credentials.
+
+[_Platform_ client libraries](https://developers.google.com/api-client-library) are older and meant to support Google APIs from multiple product families. The blog post features samples that primarily use the former, but the Python API key version requires use of the older platform libraries because API keys aren't fully supported by the (Python) Translation API product client library.
+
 
 ## Running the samples
 To learn the code and run the sample scripts from the blog post in your development environment, you're more likely to use the latter credentials type (OAuth client ID) by running the `gcloud auth application-default login` command to obtain user authorized credentials. When you're ready to move towards production and want to switch to impersonating a service account, you'd run the `gcloud auth application-default login --impersonate-service-account SERVICE_ACCT_EMAIL` command. Learn more at the ADC pages in the docs, starting with the [ADC setup page](https://cloud.google.com/docs/authentication/provide-credentials-adc). Also see the [page on the different authentication methods and credentials types](https://cloud.google.com/docs/authentication).
