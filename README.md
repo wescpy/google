@@ -37,6 +37,10 @@ App | Sample | Blog post
 [`cloud/language/nlp_sent_query-gcp.py`](/cloud/language/nlp_sent_query-gcp.py) | Sentiment analysis of text using Natural Language API w/higher-level _product_ GCP client library | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
 [`cloud/appengine/nodejs`](/cloud/appengine/nodejs) | Node.js App Engine "Hello World!" | Exploring GAE (_TBD_)
 [`cloud/appengine/python3`](/cloud/appengine/python3) | Python 3 App Engine "Hello World!" | Exploring GAE (_TBD_)
+[`cloud/transnatlang/transnatlang-svcacct-gcp.py`](/cloud/transnatlang/transnatlang-svcacct-gcp.py) | Python ADC sample | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
+[`cloud/transnatlang/transnatlang-svcacct-gcp.js`](/cloud/transnatlang/transnatlang-svcacct-gcp.js) | Node.js/CommonJS sample | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
+[`cloud/transnatlang/transnatlang-svcacct-gcp.mjs`](/cloud/transnatlang/transnatlang-svcacct-gcp.mjs) | Node.js/ECMAscript module | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
+[`cloud/transnatlang/transnatlang-apikey-old.py`](/cloud/transnatlang/transnatlang-svcacct-gcp.py) | Python API key sample | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
 &nbsp; | &nbsp; | &nbsp;
 [`gemini/gemtxt-simple-gai.py`](/gemini/gemtxt-simple-gai.py) | Google AI Gemini Pro 1.0 API Python sample | [Gemini API "Hello World!"](https://dev.to/wescpy/a-better-google-gemini-api-hello-world-sample-4ddm)
 [`gemini/gemtxt-simple-gai.js`](/gemini/gemtxt-simple-gai.js) | Google AI Gemini Pro 1.0 API (CommonJS) Node.js sample | [Gemini API "Hello World!"](https://dev.to/wescpy/a-better-google-gemini-api-hello-world-sample-4ddm)
