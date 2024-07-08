@@ -11,7 +11,7 @@
 # limitations under the License.
 
 '''
-transnatlang-svcacct-gcp.py -- GCP Natural Language & Translation APIs demo
+transnatlang-svcacct-gcp.py -- GCP Natural Language & Translation APIs demo (Python 2/3-compatible)
 '''
 from __future__ import print_function
 import sys
