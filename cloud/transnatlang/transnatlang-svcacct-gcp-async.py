@@ -14,10 +14,9 @@
 transnatlang-svcacct-gcp-async.py -- GCP Natural Language & Translation APIs demo (Python 3-only)
 '''
 import asyncio
-import sys
 from google.cloud import language_v1 as language, translate_v2 as translate
 
-# Text to analyze
+# Text to process
 _TEXT: str = '''\
     Google, headquartered in Mountain View, unveiled the new Android
     phone at the Consumer Electronics Show. Sundar Pichai said
@@ -34,19 +33,16 @@ BODY: dict = {'content': TEXT, 'type_': language.types.Document.Type.PLAIN_TEXT}
 
 async def sentAnalysis() -> None:
     'Detect text sentiment'
-    sent = NL.analyze_sentiment(document=BODY)
-    docsent = sent.document_sentiment
-    print(f'\nSENTIMENT: score ({docsent.score:.2f}), magnitude ({docsent.magnitude:.2f}')
-    print(LINE)
+    sent = NL.analyze_sentiment(document=BODY).document_sentiment
+    print(f'\nSENTIMENT: score ({sent.score:.2f}), magnitude ({sent.magnitude:.2f}')
 
 
 async def categorizeText() -> None:
     'Categorize text'
     print('\nCATEGORIES:')
-    categories = NL.classify_text(document=BODY)
-    for cat in categories.categories:
+    categories = NL.classify_text(document=BODY).categories
+    for cat in categories:
         print(f'* {cat.name[1:]} ({cat.confidence:.2f})')
-    print(LINE)
 
 
 async def translateText() -> None:
@@ -58,13 +54,15 @@ async def translateText() -> None:
 
 
 async def main() -> None:
-    'Display text to analyze'
+    'Execute all'
     print('TEXT:')
-    print(TEXT)
+    print(TEXT)             # Display text to analyze
     print(LINE)
-    await sentAnalysis()
-    await categorizeText()
-    await translateText()
+    await sentAnalysis()    # Detect text sentiment
+    print(LINE)
+    await categorizeText()  # Categorize text
+    print(LINE)
+    await translateText()   # Translate text to Spanish
 
 
 asyncio.run(main())
