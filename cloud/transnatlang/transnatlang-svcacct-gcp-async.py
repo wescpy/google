@@ -56,7 +56,7 @@ async def translateText() -> None:
 async def main() -> None:
     'Execute all'
     print('TEXT:')
-    print(TEXT)             # Display text to analyze
+    print(TEXT)             # Display text to process
     print(LINE)
     await sentAnalysis()    # Detect text sentiment
     print(LINE)

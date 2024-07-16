@@ -12,10 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import dotenv from "dotenv";
+import 'dotenv/config';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-dotenv.config()
 const PROMPT = 'Describe a cat in a few sentences';
 const MODEL = 'gemini-pro';
 console.log(`** GenAI text: '${MODEL}' model & prompt '${PROMPT}'\n`)

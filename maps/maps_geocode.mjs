@@ -15,10 +15,9 @@
 /**
  * maps_geocode.mjs -- geocode address in Google Maps
  */
-import dotenv from "dotenv";
+import 'dotenv/config';
 import { Client } from "@googlemaps/google-maps-services-js";
 
-dotenv.config();
 const ADDRESS = '1600 Amphitheatre Pkwy 94043';
 const GMAPS = new Client();
 const args = {
