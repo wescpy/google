@@ -51,7 +51,7 @@ App | Sample | Blog post
 [`gemini/gemtxt-simple10-chat-gai.py`](/gemini/gemtxt-simple10-chat-gai.py) | Google AI Gemini 1.0 Pro Latest | [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7)
 [`gemini/gemmmd-simple10loc-gai.py`](/gemini/gemmmd-simple10loc-gai.py) | Google AI Gemini 1.0 Pro Vision Latest | [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7)
 [`gemini/gemmmd-simple10url-gai.py`](/gemini/gemmmd-simple10url-gai.py) | Google AI Gemini 1.0 Pro Vision Latest | [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7)
-[`gemini/webgem/`](/gemini/webgem) | Google AI Gemini 1.5 Flash web apps (Node.js & Python) | _TBD_
+[`gemini/webgem/`](/gemini/webgem) | Google AI Gemini 1.5 Flash web apps (Node.js & Python) | [Gemini 102a: Creating basic gen AI web apps](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3)
 &nbsp; | &nbsp; | &nbsp;
 [`maps/maps_geocode.py`](/maps/maps_geocode.py) | Geolocate address with Maps Geocoding API | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 [`maps/maps_geocode.js`](/maps/maps_geocode.js) | Geolocate address with Maps Geocoding API (CommonJS) Node.js | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
