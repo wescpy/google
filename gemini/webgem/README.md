@@ -1,6 +1,6 @@
 # Google Gemini API web app samples
 
-These are the code samples that are found in the [3rd post](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3) in the [blog series introducing the Gemini API](https://dev.to/wescpy/series/27183).
+These are the code samples that are found in the [3rd post](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3) in the [series introducing the Gemini API](https://dev.to/wescpy/series/27183).
 
 ## Code samples
 App | Description | Platform
@@ -24,7 +24,7 @@ App | Description | Platform
 ### Python
 
 1. Ensure your Python (and `pip`) installation is up-to-date (recommend 3.9+)
-1. `cd python`
+1. `cd python` and optionally [create & activate a virtual environment ("virtualenv") for isolation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments)
 1. Install packages: `pip install -U pip flask pillow google-generativeai` (or `pip3`)
-1. [Create API key](https://makersuite.google.com/app/apikey) and set in `settings.py` file as `API_KEY = <YOUR_API_KEY>` ... you can alternatively put it into `.env` like the Node.js version and use `python-dotenv` like the Node version.
+1. [Create API key](https://makersuite.google.com/app/apikey) and set in `settings.py` file as `API_KEY = <YOUR_API_KEY>` ... you can alternatively put it into `.env` and use `python-dotenv`, similar to the Node version.
 1. Run `python main.js` (or `python3`)
