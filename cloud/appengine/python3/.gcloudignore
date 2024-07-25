@@ -8,11 +8,6 @@
 #
 .gcloudignore
 
-# JavaScript/Node.js
-node_modules/
-test/
-#package-lock.json
-
 # Source code control files
 .git/
 .gitignore
@@ -20,6 +15,7 @@ test/
 .hg/
 
 # README/text files
+LICENSE
 *.md
 
 # Python
@@ -52,7 +48,6 @@ pip-log.txt
 .nox/
 .pytest_cache/
 noxfile.py
-test_translate.py
 .cache
 .pytype
 .coverage
