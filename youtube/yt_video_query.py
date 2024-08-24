@@ -9,6 +9,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# FILE:    yt_video_query.py
+# POST:    dev.to/googleworkspace/getting-started-using-google-apis-api-keys-part-2-38i6
+# POST:    dev.to/wescpy/TBD
 
 from __future__ import print_function
 from googleapiclient import discovery

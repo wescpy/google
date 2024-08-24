@@ -1,4 +1,4 @@
-// Copyright 2023 CyberWeb Consulting LLC
+// Copyright 2024 CyberWeb Consulting LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,12 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-// FILE:    yt_video_query.js
+// FILE:    yt_video_query.mjs
 // POST:    dev.to/googleworkspace/getting-started-using-google-apis-api-keys-part-2-38i6
 // POST:    dev.to/wescpy/TBD
 
-require('dotenv').config();
-const {google} = require('googleapis');
+import 'dotenv/config';
+import {google} from 'googleapis';
 
 const QUERY = 'python -snake';
 const YOUTUBE = google.youtube({version: 'v3', auth: process.env.API_KEY});

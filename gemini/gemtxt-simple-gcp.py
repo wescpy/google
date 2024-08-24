@@ -11,6 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# FILE:    gemtxt-simple-gcp.py
+# POST:    dev.to/wescpy/a-better-google-gemini-api-hello-world-sample-4ddm
 
 import vertexai
 import vertexai.preview.generative_models as genai

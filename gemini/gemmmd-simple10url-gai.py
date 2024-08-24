@@ -11,6 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# FILE:    gemmmd-simple10url-gai.py
+# POST:    dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7
 
 from PIL import Image
 import requests

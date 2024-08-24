@@ -11,6 +11,9 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+//
+// FILE:    main.mjs
+// POST:    dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3
 
 import 'dotenv/config';
 import express from 'express';
