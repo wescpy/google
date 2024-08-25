@@ -12,7 +12,7 @@
 #
 # FILE:    yt_video_query.py
 # POST:    dev.to/googleworkspace/getting-started-using-google-apis-api-keys-part-2-38i6
-# POST:    dev.to/wescpy/TBD
+# POST:    dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o
 
 from __future__ import print_function
 from googleapiclient import discovery

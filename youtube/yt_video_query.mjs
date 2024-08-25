@@ -14,20 +14,20 @@
 //
 // FILE:    yt_video_query.mjs
 // POST:    dev.to/googleworkspace/getting-started-using-google-apis-api-keys-part-2-38i6
-// POST:    dev.to/wescpy/TBD
+// POST:    dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o
 
 import 'dotenv/config';
-import {google} from 'googleapis';
+import { google } from 'googleapis';
 
 const QUERY = 'python -snake';
-const YOUTUBE = google.youtube({version: 'v3', auth: process.env.API_KEY});
+const YOUTUBE = google.youtube({ version: 'v3', auth: process.env.API_KEY });
 
 async function listVideos() {
-    console.log(`\n** Searching for '${QUERY} videos...`);
-    const vids = await YOUTUBE.search.list({part: 'id,snippet', q: QUERY, type: 'video'});
-    vids.data.items.forEach(vid => {
-        console.log(`http://youtu.be/${vid.id.videoId}\t${vid.snippet.title.substring(0, 48)}`);
-    });
+  console.log(`\n** Searching for '${QUERY} videos...`);
+  const vids = await YOUTUBE.search.list({ part: 'id,snippet', q: QUERY, type: 'video' });
+  vids.data.items.forEach(vid => {
+    console.log(`http://youtu.be/${vid.id.videoId}\t${vid.snippet.title.substring(0, 48)}`);
+  });
 }
 
 listVideos().catch(console.error);
