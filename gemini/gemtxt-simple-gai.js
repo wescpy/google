@@ -19,7 +19,7 @@ require('dotenv').config();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const PROMPT = 'Describe a cat in a few sentences';
-const MODEL = 'gemini-pro';
+const MODEL = 'gemini-1.5-flash';
 console.log(`** GenAI text: '${MODEL}' model & prompt '${PROMPT}'\n`);
 
 async function main() {

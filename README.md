@@ -1,8 +1,8 @@
-# Google developer code samples
+# @wescpy Google blog code samples
 
 ## Introduction
 
-This repo contains developer code samples from the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy) as well as older but still relevant content such as posts from [the old G Suite blog](https://gsuite-developers.googleblog.com/2015/) as well as [my old Python and Google API blog](https://wescpy.blogspot.com/).
+This repo contains developer code samples from the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy) as well as older but still relevant content such as posts from [the old G Suite blog](https://gsuite-developers.googleblog.com/2015/) as well as @wescpy's [former Google/Python blog](https://wescpy.blogspot.com). Where possible and time-permitting, equivalent Node.js samples will be available as well.
 
 
 ## Content structure
@@ -58,8 +58,10 @@ App | Sample | Blog post
 [`maps/maps_geocode.mjs`](/maps/maps_geocode.mjs) | Geolocate address with Maps Geocoding API (modern JS/ECMAScript module) Node.js | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 [`maps/maps_tzone.py`](/maps/maps_geocode.py) | Geolocate address & get time zone with Maps Geocoding & Time Zone APIs (Python) | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 [`maps/maps_wlkdir.py`](/maps/maps_geocode.py) | Walking directions with Maps Directions API | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
-[`youtube/yt_video_query.py`](/youtube/yt_video_query.py) | Query for (public) YouTube videos (Python) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
-[`youtube/yt_video_query.js`](/youtube/yt_video_query.js) | Query for (public) YouTube videos (CommonJS/Node.js) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
+&nbsp; | &nbsp; | &nbsp;
+[`youtube/yt_video_query.py`](/youtube/yt_video_query.py) | Query for (public) YouTube videos (Python) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [YT APIs intro](https://dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o)
+[`youtube/yt_video_query.js`](/youtube/yt_video_query.js) | Query for (public) YouTube videos (CommonJS/Node.js) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [YT APIs intro](https://dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o)
+[`youtube/yt_video_query.mjs`](/youtube/yt_video_query.mjs) | Query for (public) YouTube videos (CommonJS/Node.js) | [YT APIs intro](https://dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o)
 <figcaption><i>Code sample table of contents</i></figcaption>
 
 

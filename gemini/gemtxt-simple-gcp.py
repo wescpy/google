@@ -19,7 +19,7 @@ import vertexai
 import vertexai.preview.generative_models as genai
 
 PROMPT = 'Describe a cat in a few sentences'
-MODEL = 'gemini-pro'
+MODEL = 'gemini-1.5-flash'
 print('** GenAI text: %r model & prompt %r\n' % (MODEL, PROMPT))
 
 vertexai.init()
