@@ -1,6 +1,6 @@
 # Google Gemini API code samples
 
-> **Sep 2024 update**: Updated code samples for _first post_ from Gemini 1.0 Pro (`gemini-pro`) to Gemini 1.5 Flash (`gemini-1.5-flash`) as the LLM model. Will be updating the code for the _second post_ soon.
+> **Sep 2024 update**: Updated code samples from Gemini 1.0 Pro (`gemini-pro`) and Pro Vision (`gemini-pro-vision`) models to Gemini 1.5 Flash (`gemini-1.5-flash`).
 
 These are the code samples that are found in the [blog post series introducing the Gemini API](https://dev.to/wescpy/series/27183):
 
