@@ -12,24 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# FILE:    gemtxt-simple10-chat-gai.py
+# FILE:    gemmmd-simple-url-gai.py
 # POST:    dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7
 
+from PIL import Image
+import requests
 import google.generativeai as genai
 from settings import API_KEY
 
-PROMPTS = ('Describe a cat in a few sentences',
-    "Since you're now a feline expert, what are the top three "
-    'most friendly cat breeds for a family with small children?'
-)
-MODEL = 'gemini-1.0-pro-latest'
-print('** GenAI text: %r model\n' % MODEL)
+IMG_URL = 'https://google.com/services/images/section-work-card-img_2x.jpg'  # SOURCE: Google
+IMG_RAW = Image.open(requests.get(IMG_URL, stream=True).raw)
+PROMPT = 'Describe the scene in this photo'
+MODEL = 'gemini-1.5-flash'
+print('** GenAI multimodal: %r model & prompt %r\n' % (MODEL, PROMPT))
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel(MODEL)
-chat = model.start_chat()
-for prompt in PROMPTS:
-    print('\n    USER:', prompt)
-    response = chat.send_message(prompt)
-    print('\n    MODEL:', response.text)
-print()
+response = model.generate_content((PROMPT, IMG_RAW))
+print(response.text)

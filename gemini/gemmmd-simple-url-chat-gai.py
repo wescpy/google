@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# FILE:    gemmmd-simple10url-gai.py
+# FILE:    gemmmd-simple-url-chat-gai.py
 # POST:    dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7
 
 from PIL import Image
@@ -22,11 +22,20 @@ from settings import API_KEY
 
 IMG_URL = 'https://google.com/services/images/section-work-card-img_2x.jpg'  # SOURCE: Google
 IMG_RAW = Image.open(requests.get(IMG_URL, stream=True).raw)
-PROMPT = 'Describe the scene in this photo'
-MODEL = 'gemini-1.0-pro-vision-latest'
-print('** GenAI multimodal: %r model & prompt %r\n' % (MODEL, PROMPT))
+PROMPTS = ('Describe the scene in this photo',
+    'You are a marketing expert. If a company uses this photo in a '
+    'press release, what product or products could they be selling?'
+)
+MODEL = 'gemini-1.5-flash'
+print('** GenAI multimodal: %r model\n' % MODEL)
 
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel(MODEL)
-response = model.generate_content((PROMPT, IMG_RAW))
-print(response.text)
+messages = []
+for prompt in PROMPTS:
+    print('\nUSER:', prompt)
+    messages.append({'role': 'user', 'parts': (prompt, DATA)})
+    response = model.generate_content(messages)
+    messages.append(response.candidates[0].content)
+    print('\nMODEL:', response.text)
+print()
