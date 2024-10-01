@@ -90,7 +90,6 @@ async function uploadCSV(authClient) {
   const data = await fs.readFile(FILENAME);
   const res = await drive.files.create({
     requestBody: METADATA,
-    //media: {mimeType: 'text/csv', body: data}
     media: {body: Readable.from(data)}
   });
   console.log(`** Uploaded '${FILENAME}' to Drive (file ID: ${res.data.id})`);

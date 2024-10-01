@@ -89,7 +89,7 @@ async function authorize() {
  *
  * @param {JSONClient} authClient (client credentials)
  */
-async function uploadCSV(authClient) {
+async function importCSV(authClient) {
   const drive = google.drive({version: 'v3', auth: authClient});
   const data = await fs.readFile(SRC_FILENAME);
   const res = await drive.files.create({
@@ -99,4 +99,4 @@ async function uploadCSV(authClient) {
   console.log(`** Imported '${SRC_FILENAME}' as Sheets to '${DST_FILENAME}' (file ID: ${res.data.id})`);
 }
 
-authorize().then(uploadCSV).catch(console.error);
+authorize().then(importCSV).catch(console.error);

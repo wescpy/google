@@ -12,7 +12,7 @@ This repo contains developer code samples from an _upcoming_ post covering how t
 
 The sample app from the post come in several versions. This table will help you choose which works for you. Be sure to complete the setup & prerequisites below to ensure the samples will run if you haven't already.
 
-Sample | Description | Runtime or technology
+Sample | Description | Tech info
 --- | --- | ---
 [`python/drive_csv_upload.py`](python/drive_csv_upload.py) | Upload CSV as-is to Drive | Python (2 & 3) version using current auth libs (`google.auth`)
 [`python/drive_csv_import.py`](python/drive_csv_import.py) | Import CSV to Drive as Sheets | Python (2 & 3) version using current auth libs (`google.auth`)
@@ -31,14 +31,14 @@ Sample | Description | Runtime or technology
 1. ***Create a new project*** [from the Cloud/developer console](https://console.cloud.google.com/projectcreate) or with `gcloud projects create . . .`; or reuse an existing project
 1. ***Enable the Google Drive API***. Pick your preferred method of these three common ways to enable APIs:
     - **DevConsole manually** -- Enable the API manually from the DevConsole by following these steps:
-        - Go to [DevConsole](http://console.developers.google.com)
-        - Click on **Library** tab in the left-nav; search for "Drive", and enable
+        1. Go to [DevConsole](http://console.developers.google.com)
+        1. Click on **Library** tab in the left-nav; search for "Drive", and enable
     - **DevConsole link** -- You may be new to Google APIs or don't have experience enabling APIs manually in the DevConsole. If this is you...
-        - Check out the [API listing page](https://console.cloud.google.com/apis/library/drive.googleapis.com) to learn more about the API and enable it from there.
-        - Alternatively, skip the API info and click [this link](http://console.developers.google.com/start/api?id=drive) for the enable button.
+        1. Check out the [API listing page](https://console.cloud.google.com/apis/library/drive.googleapis.com) to learn more about the API and enable it from there.
+        1. Alternatively, skip the API info and click [this link](http://console.developers.google.com/start/api?id=drive) for the enable button.
     - **Command-line** (`gcloud`) -- Those who prefer working in a terminal can enable APIs with a single command in the [Cloud Shell](https://cloud.google.com/shell) or locally on your computer if you [installed the Cloud SDK](https://cloud.google.com/sdk/install) which includes the `gcloud` command-line tool (CLI) and initialized its use.
-        - If this is you, issue this command to enable the API: `gcloud services enable drive.googleapis.com`
-        - Confirm all the APIs you've enabled with this command: `gcloud services list`
+        1. If this is you, issue this command to enable the API: `gcloud services enable drive.googleapis.com`
+        1. Confirm all the APIs you've enabled with this command: `gcloud services list`
 1. ***Create OAuth client ID & secret [credentials](https://console.cloud.google.com/apis/credentials)*** and save the file to your local filesystem as `client_secret.json`. The code samples **will not run** without this file present.
 1. ***Install the Google APIs client library***:
     - **NodeJS (16+)**:  Create a basic `package.json` and install required pkgs with this command:
