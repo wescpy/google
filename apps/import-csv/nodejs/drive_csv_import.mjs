@@ -100,10 +100,3 @@ async function uploadCSV(authClient) {
 }
 
 authorize().then(uploadCSV).catch(console.error);
-
-/*
-
-$ node drive_csv_import.mjs
-** Imported 'inventory.csv' as Sheets to 'inventory' (file ID: 16QbKvPNwyPJEVYSNS3_Leere7Rli5uroFNRRp1crTw4)
-
-*/

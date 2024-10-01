@@ -1,7 +1,7 @@
 # "Uploading CSV files to Google Drive and importing them as Google Sheets" code samples
 
 ## Introduction
-This repo contains developer code samples from a post covering how to upload CSV files to Google Drive as-is as well as how to do the same but import them into Google Sheets format](https://dev.to/wescpy/export-google-docs-as-pdf-without-the-docs-api-9o4) featured on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
+This repo contains developer code samples from an _upcoming_ post covering how to upload CSV files to Google Drive as-is as well as how to do the same but import them into Google Sheets format featured on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
 
 | :memo: Python 2 and 3 supported |
 |:---------------------------|

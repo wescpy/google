@@ -97,10 +97,3 @@ async function uploadCSV(authClient) {
 }
 
 authorize().then(uploadCSV).catch(console.error);
-
-/*
-
-$ node drive_csv_upload.mjs
-** Uploaded 'inventory.csv' to Drive (file ID: 1clFTN_8CbP10DYnD8yO0NUx48MwEg2nz)
-
-*/

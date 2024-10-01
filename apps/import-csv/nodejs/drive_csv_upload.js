@@ -97,18 +97,3 @@ async function uploadCSV(authClient) {
 }
 
 authorize().then(uploadCSV).catch(console.error);
-
-/*
-
-$ node drive_csv_upload.js
-** Uploaded 'inventory.csv' to Drive (file ID: 1n7xsKTFUeZKaxpB1CbQZl5DfedkxykXq)
-
-$ node drive_csv_upload.js
-TypeError: part.body.pipe is not a function
-    at multipartUpload (/private/tmp/nodejs1/node_modules/googleapis-common/build/src/apirequest.js:180:27)
-    at createAPIRequestAsync (/private/tmp/nodejs1/node_modules/googleapis-common/build/src/apirequest.js:219:17)
-    at createAPIRequest (/private/tmp/nodejs1/node_modules/googleapis-common/build/src/apirequest.js:52:16)
-    at Resource$Files.create (/private/tmp/nodejs1/node_modules/googleapis/build/src/apis/drive/v3.js:745:65)
-    at uploadCSV (/private/tmp/nodejs1/drive_csv_upload.js:98:33)
-
-*/
