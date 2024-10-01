@@ -31,6 +31,8 @@ DRIVE = discovery.build('drive', 'v3', http=creds.authorize(Http()))
 # upload CSV file as-is with Drive API
 FILENAME = 'inventory.csv'
 METADATA = {'name': FILENAME}
-rsp = DRIVE.files().create(body=METADATA, media_body=FILENAME).execute()
+rsp = DRIVE.files().create(
+        body=METADATA, media_body=FILENAME).execute()
 if rsp:
-    print('Uploaded %r to Drive (file ID: %s)' % (FILENAME, rsp['id']))
+    print('Uploaded %r to Drive (file ID: %s)' % (
+            FILENAME, rsp['id']))

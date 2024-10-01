@@ -1,7 +1,7 @@
 # "Uploading CSV files to Google Drive and importing them as Google Sheets" code samples
 
 ## Introduction
-This repo contains developer code samples from an _upcoming_ post covering how to upload CSV files to Google Drive as-is as well as how to do the same but import them into Google Sheets format featured on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
+This repo contains developer code samples from a [post covering how to import CSV files to Google Sheets](https://dev.to/wescpy/import-csv-to-google-sheets-without-the-sheets-api-20g1), covering that conversion to Sheets as well as uploading the CSV to Drive as-is. The post is posted as part of the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
 
 | :memo: Python 2 and 3 supported |
 |:---------------------------|
@@ -10,7 +10,7 @@ This repo contains developer code samples from an _upcoming_ post covering how t
 
 ## Code samples
 
-The sample app from the post come in several versions. This table will help you choose which works for you. Be sure to complete the setup & prerequisites below to ensure the samples will run if you haven't already.
+The sample apps from the post come in several versions. This table will help you choose which works for you. Be sure to complete the setup & prerequisites below to ensure the samples will run if you haven't already.
 
 Sample | Description | Tech info
 --- | --- | ---
@@ -41,13 +41,13 @@ Sample | Description | Tech info
         1. Confirm all the APIs you've enabled with this command: `gcloud services list`
 1. ***Create OAuth client ID & secret [credentials](https://console.cloud.google.com/apis/credentials)*** and save the file to your local filesystem as `client_secret.json`. The code samples **will not run** without this file present.
 1. ***Install the Google APIs client library***:
-    - **NodeJS (16+)**:  Create a basic `package.json` and install required pkgs with this command:
+    - **NodeJS (16+)**:  Create a basic `package.json` and install required packages with this command:
         - `npm i googleapis @google-cloud/local-auth`
     - **Python 2 or 3 (_new auth_):** In your normal or `virtualenv` environment, run the following command if using the current/new Python auth libraries (most everyone):
         - `pip install -U google-api-python-client google-auth-httplib2 google-auth-oauthlib` (or `pip3`)
     - **Python 2 or 3 (_old auth_):** If you have dependencies on the older Python auth libraries and/or still have old code lying around that do (see warning sidebar below), run this command to ensure you have the latest/last versions of these libraries:
         - `pip install -U pip google-api-python-client oauth2client` (or `pip3`)
-    - For Python specifically, 2.x means 2.7, and if you're already planning the migration to 3.x, you should **definitely** not be using _anything_ older than 2.6 (as it's the 1st release with 3.x-compatible features). For 3.x, it should work for nearly all releases, but 3.7 or newer are recommend.
+    - For Python specifically, 2.x means 2.7, and if you're already planning the migration to 3.x, you should **definitely** not be using _anything_ older than 2.6 (as it's the 1st release with 3.x-compatible features). For 3.x, it should work for nearly all releases, but 3.7 or newer are recommended.
 
 | :boom: Caveat: `oauth2client` deprecated |
 |:---------------------------|
