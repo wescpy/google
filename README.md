@@ -20,13 +20,14 @@ Directory | API families
 <figcaption><i>Code sample categories</i></figcaption>
 
 
-### Initial samples
+### Code samples
 
-The chart below identifies the current samples available:
+The chart below identifies the code samples and posts covering them:
 
 App | Sample | Blog post
 --- | --- | ---
-[`apps/export-doc-pdf`](/apps/export-doc-pdf) | Export Google Docs as PDF | [Google Docs as PDF](https://dev.to/googleworkspace/export-google-docs-as-pdf-without-the-docs-api-9o4)
+[`apps/export-doc-pdf/`](/apps/export-doc-pdf) | Export Google Docs as PDF (Node.js & Python) | [Export Google Docs as PDF](https://dev.to/googleworkspace/export-google-docs-as-pdf-without-the-docs-api-9o4)
+[`apps/import-csv/`](/apps/import-csv) | Import CSV to Google Sheets (Node.js & Python) | [Import CSV to Google Sheets](https://dev.to/wescpy/import-csv-to-google-sheets-without-the-sheets-api-20g1)
 [`apps/sheets_display.py`](/apps/sheets_display.py) | Display contents of public Sheet | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
 [`apps/drive_list.py`](https://github.com/wescpy/gsuite-apis-intro/blob/master/python/drive_list.py) (other repo) | Display first 100 files/folders in Google Drive (Python old auth) | [OAuth client ID 3](https://dev.to/wescpy/getting-started-using-google-apis-workspace-33-2me0)
 [`apps/drive_list-new.py`](http://github.com/wescpy/gsuite-apis-intro/blob/master/python/drive_list-new.py) (other repo) | Display first 100 files/folders in Google Drive (Python new auth) | [OAuth client ID 3](https://dev.to/wescpy/getting-started-using-google-apis-workspace-33-2me0)
@@ -37,10 +38,7 @@ App | Sample | Blog post
 [`cloud/language/nlp_sent_query-gcp.py`](/cloud/language/nlp_sent_query-gcp.py) | Sentiment analysis of text using Natural Language API w/higher-level _product_ GCP client library | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
 [`cloud/appengine/nodejs`](/cloud/appengine/nodejs) | Node.js App Engine "Hello World!" | Exploring GAE (_TBD_)
 [`cloud/appengine/python3`](/cloud/appengine/python3) | Python 3 App Engine "Hello World!" | Exploring GAE (_TBD_)
-[`cloud/transnatlang/transnatlang-svcacct-gcp.py`](/cloud/transnatlang/transnatlang-svcacct-gcp.py) | Python ADC sample | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
-[`cloud/transnatlang/transnatlang-svcacct-gcp.js`](/cloud/transnatlang/transnatlang-svcacct-gcp.js) | Node.js/CommonJS sample | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
-[`cloud/transnatlang/transnatlang-svcacct-gcp.mjs`](/cloud/transnatlang/transnatlang-svcacct-gcp.mjs) | Node.js/ECMAscript module | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
-[`cloud/transnatlang/transnatlang-apikey-old.py`](/cloud/transnatlang/transnatlang-svcacct-gcp.py) | Python API key sample | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
+[`cloud/transnatlang/`](/cloud/transnatlang) | Text-based language processing (Node.js & Python) | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
 &nbsp; | &nbsp; | &nbsp;
 [`gemini/gemtxt-simple-gai.py`](/gemini/gemtxt-simple-gai.py) | Google AI Gemini Pro 1.0 API Python sample | [Gemini API "Hello World!"](https://dev.to/wescpy/a-better-google-gemini-api-hello-world-sample-4ddm)
 [`gemini/gemtxt-simple-gai.js`](/gemini/gemtxt-simple-gai.js) | Google AI Gemini Pro 1.0 API (CommonJS) Node.js sample | [Gemini API "Hello World!"](https://dev.to/wescpy/a-better-google-gemini-api-hello-world-sample-4ddm)
@@ -53,15 +51,11 @@ App | Sample | Blog post
 [`gemini/gemmmd-simple10url-gai.py`](/gemini/gemmmd-simple10url-gai.py) | Google AI Gemini 1.0 Pro Vision Latest | [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7)
 [`gemini/webgem/`](/gemini/webgem) | Google AI Gemini 1.5 Flash web apps (Node.js & Python) | [Gemini 102a: Creating basic gen AI web apps](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3)
 &nbsp; | &nbsp; | &nbsp;
+[`maps/`](/maps) | Maps Geocoding, Directions, and Time Zone APIs (Node.js & Python) | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 [`maps/maps_geocode.py`](/maps/maps_geocode.py) | Geolocate address with Maps Geocoding API | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
-[`maps/maps_geocode.js`](/maps/maps_geocode.js) | Geolocate address with Maps Geocoding API (CommonJS) Node.js | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
-[`maps/maps_geocode.mjs`](/maps/maps_geocode.mjs) | Geolocate address with Maps Geocoding API (modern JS/ECMAScript module) Node.js | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
-[`maps/maps_tzone.py`](/maps/maps_geocode.py) | Geolocate address & get time zone with Maps Geocoding & Time Zone APIs (Python) | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
-[`maps/maps_wlkdir.py`](/maps/maps_geocode.py) | Walking directions with Maps Directions API | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 &nbsp; | &nbsp; | &nbsp;
-[`youtube/yt_video_query.py`](/youtube/yt_video_query.py) | Query for (public) YouTube videos (Python) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [YT APIs intro](https://dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o)
-[`youtube/yt_video_query.js`](/youtube/yt_video_query.js) | Query for (public) YouTube videos (CommonJS/Node.js) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [YT APIs intro](https://dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o)
-[`youtube/yt_video_query.mjs`](/youtube/yt_video_query.mjs) | Query for (public) YouTube videos (CommonJS/Node.js) | [YT APIs intro](https://dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o)
+[`youtube/`](/youtube) | Query for (public) YouTube videos (Node.js & Python) | [Intro to the YouTube APIs](https://dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o)
+[`youtube/yt_video_query.py`](/youtube/yt_video_query.py) | Query for (public) YouTube videos (Python) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) (and Intro to the YouTube APIs)
 <figcaption><i>Code sample table of contents</i></figcaption>
 
 
