@@ -11,7 +11,7 @@
 // limitations under the License.
 //
 // FILE:    drive_csv_upload.js
-// POST:    dev.to/wescpy/...
+// POST:    dev.to/googleworkspace/import-csv-to-google-sheets-without-the-sheets-api-20g1
 
 const fs = require('fs').promises;
 const path = require('path');

@@ -11,7 +11,7 @@
 # limitations under the License.
 #
 # FILE:    drive_csv_upload-old.py
-# POST:    dev.to/wescpy/
+# POST:    dev.to/googleworkspace/import-csv-to-google-sheets-without-the-sheets-api-20g1
 
 from __future__ import print_function
 from googleapiclient import discovery
