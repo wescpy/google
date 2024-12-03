@@ -26,7 +26,7 @@ import google.generativeai as genai
 from settings import API_KEY    # can also use .env & python-dotenv
 
 ALLOW_EXTS = {'png', 'jpg', 'jpeg', 'gif'}  # allowed types
-MODEL_NAME = 'gemini-1.5-flash-latest'  # Gemini LLM model
+MODEL_NAME = 'gemini-1.5-flash'         # Gemini LLM model
 THUMB_DIMS = 480, 360                   # thumbnail dimensions
 JINUN_TMPL = 'index.html'               # Jinja2/Nunjucks template
 

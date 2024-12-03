@@ -19,7 +19,7 @@ import google.generativeai as genai
 from settings import API_KEY
 
 PROMPT = 'Describe a cat in a few sentences'
-MODEL = 'gemini-1.0-pro-latest'
+MODEL = 'gemini-1.5-flash'
 print('** GenAI text: %r model & prompt %r\n' % (MODEL, PROMPT))
 
 genai.configure(api_key=API_KEY)

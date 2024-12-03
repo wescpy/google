@@ -34,4 +34,4 @@ async function main() {
   console.log(`** Geocode for "${ADDRESS}": (${geo.lat}, ${geo.lng})`);
 }
 
-main();
+main().catch(console.error);

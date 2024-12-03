@@ -24,7 +24,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const PORT = process.env.PORT || 8080;
 const ALLOW_EXTS = ['png', 'jpg', 'jpeg', 'gif'];   // allowed types
-const MODEL_NAME = 'gemini-1.5-flash-latest';       // Gemini LLM model
+const MODEL_NAME = 'gemini-1.5-flash';       // Gemini LLM model
 const THUMB_DIMS = [480, 360];                      // thumbnail dimensions
 const JINUN_TMPL = 'index.html';                    // Jinja2/Nunjucks template
 
