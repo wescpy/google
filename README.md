@@ -44,13 +44,13 @@ App | Sample | Blog post
 [`gemini/webgem/*`](/gemini/webgem) | Google AI Gemini API web apps (Node.js & Python) | [Gemini 102a: Creating basic gen AI web apps](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3)
 &nbsp; | &nbsp; | &nbsp;
 [`maps/`](/maps) | Maps Geocoding, Directions, and Time Zone APIs (Node.js & Python) | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
-<!--[`maps/maps_static.*`](/maps) | Maps Static API (Node.js & Python) | The easiest Google API in the world! _(forthcoming)_-->
 [`maps/maps_geocode.py`](/maps/maps_geocode.py) | Geolocate address with Maps Geocoding API | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 &nbsp; | &nbsp; | &nbsp;
 [`youtube/`](/youtube) | Query for (public) YouTube videos (Node.js & Python) | [Intro to the YouTube APIs](https://dev.to/wescpy/intro-to-the-youtube-apis-searching-for-videos-5a0o)
 [`youtube/yt_video_query.py`](/youtube/yt_video_query.py) | Query for (public) YouTube videos (Python) | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) (and Intro to the YouTube APIs)
 <figcaption><i>Code sample table of contents</i></figcaption>
 
+<!-- maps/maps_static.* | Maps Static API (Node.js & Python) | The easiest Google API in the world! -->
 
 ## Support
 
