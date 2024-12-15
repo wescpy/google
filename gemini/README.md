@@ -26,3 +26,4 @@ Link | App | Description | Platform | Model | Language
 [Post 2](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7) | [`gemmmd-simple-url-gai.py`](/gemini/gemmmd-simple-url-gai.py) |  Multimodal (online image) | Google AI | Gemini 1.5 Flash | Python 3
 [Post 2](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7) | [`gemmmd-simple-url-chat-gai.py`](/gemini/gemmmd-simple-url-chat-gai.py) |  Multimodal chat (online image) | Google AI | Gemini 1.5 Flash | Python 3
 [Post 3](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3) | [`webgem`](/gemini/webgem/) |  Multimodal (uploaded image) | Google AI | Gemini 1.5 Flash | Python & Node.js (CommonJS)
+Post 4 _(TBD)_ | [`gem20-audio.py`](/gemini/gem20-audio.py) | Generate audio track | Google AI | Gemini 2.0 Flash (experimental) | Python 3

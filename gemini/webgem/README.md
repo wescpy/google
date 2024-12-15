@@ -9,11 +9,12 @@ These are the code samples that are found in the [3rd post](https://dev.to/wescp
 ## Code samples
 App | Description | Platform
 --- | --- | ---
-[`webgem/nodejs/main.js`](/gemini/webgem/nodejs/main.js) | Express.js sample app | Node.js (CommonJS)
-[`webgem/nodejs/main.mjs`](/gemini/webgem/nodejs/main.mjs) | Express.js sample app | Node.js (modern JS/ECMAScript module)
-[`webgem/nodejs/templates/index.html`](/gemini/webgem/nodejs/templates/index.html) | Web template | Nunjucks (identical to Jinja2)
-[`webgem/python/main.py`](/gemini/webgem/python/main.py) | Flask sample app | Python 3
-[`webgem/python/templates/index.html`](/gemini/webgem/python/templates/index.html) | Web template | Jinja2 (identical to Nunjucks)
+[`nodejs/main.js`](/gemini/webgem/nodejs/main.js) | Express.js sample app | Node.js (CommonJS)
+[`nodejs/main.mjs`](/gemini/webgem/nodejs/main.mjs) | Express.js sample app | Node.js (modern JS/ECMAScript module)
+[`nodejs/templates/index.html`](/gemini/webgem/nodejs/templates/index.html) | Web template | Nunjucks (identical to Jinja2)
+ | |
+[`python/main.py`](/gemini/webgem/python/main.py) | Flask sample app | Python 3
+[`python/templates/index.html`](/gemini/webgem/python/templates/index.html) | Web template | Jinja2 (identical to Nunjucks)
 
 ## Instructions
 
