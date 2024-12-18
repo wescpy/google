@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    gem20-audio.py
-# POST:    dev.to/wescpy/XXX (TBD)
+# POST:    dev.to/wescpy/generate-audio-clips-with-gemini-20-flash-from-google-n0g
 
 import asyncio
 import contextlib
