@@ -1,0 +1,29 @@
+.gcloudignore
+
+# Source code control files
+.git/
+.gitignore
+.hgignore
+.hg/
+
+# README/text files
+LICENSE
+*.md
+
+# JavaScript/Node.js
+node_modules/
+test/
+package-lock.json
+
+# Mac
+.DS_Store
+
+# IDEs/editors
+*.sw[op]
+*~
+.vscode
+.idea
+
+# Built documentation
+docs/_build
+docs.metadata

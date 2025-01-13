@@ -21,7 +21,7 @@ If there is a logical codelab to do immediately after completing one, they will 
 
 Python App Engine developers hang out in various online communities, including these:
 - [Slack](https://googlecloud-community.slack.com) (`#app-engine`, `#python`, and other channels); visit [this link](https://join.slack.com/t/googlecloud-community/shared_invite/zt-ywj8ieuc-BrAaHC~qe5IgelXS9vzNRA) to join
-- [Reddit](http://reddit.com) in the [Google Cloud](https://reddit.com/googlecloud) or [App Engine](https://reddit.com/appengine) subs (subReddits).
+- [Reddit](http://reddit.com) in the [Google Cloud](https://reddit.com/r/googlecloud) or [App Engine](https://reddit.com/r/appengine) subs (subReddits).
 
 
 ## References

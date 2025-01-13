@@ -1,10 +1,15 @@
 # Google Gemini API web app samples
 
-These are the code samples that are found in the [3rd post](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3) in the [series introducing the Gemini API](https://dev.to/wescpy/series/27183).
+These are the code samples that are found in the [3rd post](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3) in the [Gemini API series](https://dev.to/wescpy/series/27183).
 
 | :exclamation: API key required |
 |:---------------------------|
 | An API key is required to use Google's Gemini API. Follow the instructions below. The app will ***not*** run without a `.env` file (Node.js) or `settings.py` (Python). |
+
+| :bulb: Deploy this app to GCP serverless platforms |
+|:---------------------------|
+| There is an alternative version to this app that allow it to be deployed to GCP serverless platforms like Cloud Run and App Engine. It is nearly-identical to the app in this repo except it contains additional configuration files making it deployable to the cloud. If you're looking for the cloud-capable version, you can find it in [this repo](https://github.com/wescpy/nebulous-serverless/tree/main/multi/webgem)... a separate post covering it is in the works. |
+
 
 ## Code samples
 App | Description | Platform
