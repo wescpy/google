@@ -9,9 +9,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# FILE:    maps_tzone.py
+# POST:    dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj
 
 '''
-maps_tzone.py -- geocode address and get Google Maps time zone
+geocode address and get Google Maps time zone
 '''
 from __future__ import print_function
 import googlemaps

@@ -11,10 +11,10 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+//
+// FILE:    maps_geocode.js
+// POST:    dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj
 
-/**
- * maps_geocode.js -- geocode address in Google Maps
- */
 require('dotenv').config();
 const { Client } = require("@googlemaps/google-maps-services-js");
 
