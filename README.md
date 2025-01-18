@@ -36,12 +36,12 @@ App | Sample | Blog post
 &nbsp; | &nbsp; | &nbsp;
 [`cloud/language/nlp_sent_query.py`](/cloud/language/nlp_sent_query.py) | Sentiment analysis of text using Natural Language API w/lower-level _platform_ Google APIs client library | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
 [`cloud/language/nlp_sent_query-gcp.py`](/cloud/language/nlp_sent_query-gcp.py) | Sentiment analysis of text using Natural Language API w/higher-level _product_ GCP client library | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
-[`cloud/appengine/*`](/cloud/appengine) | Python & Node.js App Engine "Hello World!" apps | [Using App Engine in 2024](https://dev.to/wescpy/hosting-apps-in-the-cloud-with-google-app-engine-3fn)
-[`cloud/cloudrun/*`](/cloud/cloudrun) | Python & Node.js Cloud Run "Hello World!" apps | [Modern app-hosting without servers](https://dev.to/wescpy/guide-to-modern-app-hosting-without-servers-on-google-cloud-37n8)
+[`cloud/appengine/`](/cloud/appengine) | App Engine "Hello World!" apps (Node.js & Python) | [Using App Engine in 2024](https://dev.to/wescpy/hosting-apps-in-the-cloud-with-google-app-engine-3fn)
+[`cloud/cloudrun/`](/cloud/cloudrun) | Cloud Run "Hello World!" apps (Node.js & Python) | [Modern app-hosting without servers](https://dev.to/wescpy/guide-to-modern-app-hosting-without-servers-on-google-cloud-37n8)
 [`cloud/transnatlang/`](/cloud/transnatlang) | Text-based language processing (Node.js & Python) | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
 &nbsp; | &nbsp; | &nbsp;
 [`gemini/*`](/gemini/) | Google AI Gemini API samples (Node.js & Python) | [Gemini API "Hello World!"](https://dev.to/wescpy/a-better-google-gemini-api-hello-world-sample-4ddm), [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7), [Gemini 2.0 Audio](https://dev.to/wescpy/generate-audio-clips-with-gemini-20-flash-from-google-n0g)
-[`gemini/webgem/*`](/gemini/webgem) | Google AI Gemini API web apps (Node.js & Python) | [Gemini 102a: Creating basic gen AI web apps](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3)
+[`gemini/webgem/`](/gemini/webgem) | Google AI Gemini API web apps (Node.js & Python) | [Gemini 102a: Creating basic gen AI web apps](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3)
 &nbsp; | &nbsp; | &nbsp;
 [`maps/`](/maps) | Maps Geocoding, Directions, and Time Zone APIs (Node.js & Python) | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 [`maps/maps_geocode.py`](/maps/maps_geocode.py) | Geolocate address with Maps Geocoding API | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
