@@ -90,7 +90,6 @@ async function read_parse_md(fname) {
   // read Markdown content
   var contentBuf = await fs.readFile(FILENAME);
   var content = await contentBuf.toString('utf-8');
-  //console.log(content);
 
   // parse actions & remove tokens; convert to plain text
   var actions = [];  // Markdown styling actions
@@ -103,7 +102,6 @@ async function read_parse_md(fname) {
       var action = (dl == '*') ? 'bold' : 'italic';  // Markdown action
       await actions.push([ action, i, j ]);      // add to styling actions
   }
-  //console.log([actions]);
   return [ content, actions ];
 }
 
@@ -162,8 +160,8 @@ async function format_text(DOCS, actions, docs_id) {
 
   // send requests to Docs API
   await DOCS.documents.batchUpdate({
-      requestBody: { requests: requests },
-      documentId: docs_id
+    requestBody: { requests: requests },
+    documentId: docs_id
   });
 }
 
@@ -175,16 +173,16 @@ async function format_text(DOCS, actions, docs_id) {
  * @return {Promise<void>}
  */
 async function md2docs(authClient) {
-    const DOCS = google.docs({ version: 'v1', auth: authClient });
-    const [ text, actions ] = await read_parse_md(FILENAME);
-    console.log(`** Parsed Markdown file '${FILENAME}' & style actions`);
-    const docs_fn = await FILENAME.replace('.md', '');  // remove MD file ext
-    const docs_id = await create_doc(DOCS, docs_fn);
-    console.log(`** Created '${docs_fn}' (ID: ${docs_id})`);
-    await write_text(DOCS, text, docs_id);
-    console.log(`** Inserted '${text.replace(/\n/g, "\\n")}' into document`);
-    await format_text(DOCS, actions, docs_id);
-    console.log('** Completed Markdown formatting in document:', actions);
+  const DOCS = google.docs({ version: 'v1', auth: authClient });
+  const [ text, actions ] = await read_parse_md(FILENAME);
+  console.log(`** Parsed Markdown file '${FILENAME}' & style actions`);
+  const docs_fn = await FILENAME.replace('.md', '');  // remove MD file ext
+  const docs_id = await create_doc(DOCS, docs_fn);
+  console.log(`** Created '${docs_fn}' (ID: ${docs_id})`);
+  await write_text(DOCS, text, docs_id);
+  console.log(`** Inserted '${text.replace(/\n/g, "\\n")}' into document`);
+  await format_text(DOCS, actions, docs_id);
+  console.log('** Completed Markdown formatting in document:', actions);
 }
 
 authorize().then(md2docs).catch(console.error);
