@@ -17,7 +17,8 @@ Directory | API families
 [`maps`](/maps) | [Google Maps](https://developers.google.com/maps) (Platform; "GMP")
 [`youtube`](/youtube) | [YouTube](https://developers.google.com/youtube)
 `multi` | (multi-product sample apps) [_N/A at this time_]
-<figcaption><i>Code sample categories</i></figcaption>
+[`videos`](/videos) | _(not really code)_ select related videos
+<figcaption><i>Code sample categories/folders</i></figcaption>
 
 
 ### Code samples
