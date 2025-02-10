@@ -1,9 +1,7 @@
 # "Building a basic Markdown-to-Google Docs converter" code samples
 
 ## Introduction
-This repo contains developer code samples from an upcoming [post on using the Google Docs API](https://dev.to/googleworkspace/building-a-basic-markdown-to-google-docs-converter-1220) covering its implementation. The post is posted as part of the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
-
-![Markdown to Google Docs conversion](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7ha5q59y9q2aeu5hon9l.png)
+This repo contains developer code samples from the [post on using the Google Docs API to convert Markdown to Google Docs](https://dev.to/googleworkspace/building-a-basic-markdown-to-google-docs-converter-1220) from the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
 
 ![Stylization-Formatted string in Google Docs](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dk1lokm8xejpv386kpnu.png)
 
