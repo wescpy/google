@@ -3,9 +3,9 @@
 ## Introduction
 This repo contains developer code samples from an upcoming [post on using the Google Docs API] covering that conversion to Sheets as well as uploading the CSV to Drive as-is. The post is posted as part of the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
 
-| :memo: Python 2 and 3 supported |
-|:---------------------------|
-| Most of the world is on Python 3 today, but there are still some with dependencies on 2.x that make migration challenging. The Python code samples in this repo are both Python 2-3 compatible, hence why you don't see newer features like `async/await`, type annotations, `f`-strings, etc. |
+![Markdown to Google Docs conversion](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7ha5q59y9q2aeu5hon9l.png)
+
+![Stylization-Formatted string in Google Docs](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dk1lokm8xejpv386kpnu.png)
 
 
 ## Code samples
@@ -24,6 +24,10 @@ Sample | Description | Tech info
 [`nodejs/md2docs.js`](nodejs/md2docs.js) | Markdown-to-Google Docs converter | CommonJS Node.js/JavaScript version
 [`nodejs/package.json`](nodejs/package.json) | 3rd-party packages requirements | _n/a_
 [`nodejs/quickbrownfox.md`](nodejs/quickbrownfox.md) | Data file | Markdown (same as Python version)
+
+| :memo: Python 2 and 3 supported |
+|:---------------------------|
+| Most of the world is on Python 3 today, but there are still some with dependencies on 2.x that make migration challenging. The Python code samples in this repo are both Python 2-3 compatible, hence why you don't see newer features like `async/await`, type annotations, `f`-strings, etc. |
 
 
 ## Prerequisites/required setup

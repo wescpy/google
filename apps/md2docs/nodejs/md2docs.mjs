@@ -2,9 +2,7 @@
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     apache.org/licenses/LICENSE-2.0
+// You may obtain a copy of the License at apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -95,12 +93,12 @@ async function read_parse_md(fname) {
   var actions = [];  // Markdown styling actions
   const matches = await content.matchAll(/(([_*])([^\2]+)\2)/g);
   for (const match of matches) {
-      const [ md, dl, pt ] = await match.slice(1, 4); // MD str, delimiter, plain text str
-      var i = await content.indexOf(md);    // begin index for styling
-      var j = i + pt.length + 1;     // end index for styling
-      content = await content.replace(md, pt);   // replace MD with plain text
-      var action = (dl == '*') ? 'bold' : 'italic';  // Markdown action
-      await actions.push([ action, i, j ]);      // add to styling actions
+    const [ md, dl, pt ] = await match.slice(1, 4); // MD str, delimiter, plain text str
+    var i = await content.indexOf(md);    // begin index for styling
+    var j = i + pt.length + 1;     // end index for styling
+    content = await content.replace(md, pt);   // replace MD with plain text
+    var action = (dl == '*') ? 'bold' : 'italic';  // Markdown action
+    await actions.push([ action, i, j ]);      // add to styling actions
   }
   return [ content, actions ];
 }
