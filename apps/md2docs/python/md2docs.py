@@ -11,7 +11,7 @@
 # limitations under the License.
 #
 # FILE:    md2docs.py
-# POST:    dev.to/wescpy/TBD
+# POST:    dev.to/googleworkspace/building-a-basic-markdown-to-google-docs-converter-1220
 
 from __future__ import print_function
 import os.path

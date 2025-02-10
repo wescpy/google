@@ -11,7 +11,7 @@
 // limitations under the License.
 //
 // FILE:    md2docs.js
-// POST:    dev.to/wescpy/TBD
+// POST:    dev.to/googleworkspace/building-a-basic-markdown-to-google-docs-converter-1220
 
 const fs = require('fs').promises;
 const path = require('path');

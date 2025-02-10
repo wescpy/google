@@ -11,7 +11,7 @@
 // limitations under the License.
 //
 // FILE:    md2docs.mjs
-// POST:    dev.to/wescpy/TBD
+// POST:    dev.to/googleworkspace/building-a-basic-markdown-to-google-docs-converter-1220
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
