@@ -91,7 +91,7 @@ async function read_parse_md(fname) {
 
   // parse actions & remove tokens; convert to plain text
   var actions = [];  // Markdown styling actions
-  const matches = await content.matchAll(/(([_*])([^\2]+)\2)/g);
+  const matches = await content.matchAll(/(([_*])([^\2]+?)\2)/g);
   for (const match of matches) {
     const [ md, dl, pt ] = await match.slice(1, 4); // MD str, delimiter, plain text str
     var i = await content.indexOf(md);    // begin index for styling

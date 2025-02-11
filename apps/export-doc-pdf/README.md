@@ -2,7 +2,7 @@
 
 
 ## Introduction
-This repo contains developer code samples from a [blog post covering how to export Google Docs documents as PDF](https://dev.to/wescpy/export-google-docs-as-pdf-without-the-docs-api-9o4) featured on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
+This repo contains developer code samples from the [post covering how to export Google Docs documents as PDF](https://dev.to/wescpy/export-google-docs-as-pdf-without-the-docs-api-9o4) featured on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy). The samples are available in Python and Node.js/JavaScript.
 
 | :memo: Python 2 and 3 supported |
 |:---------------------------|

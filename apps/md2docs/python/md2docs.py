@@ -48,7 +48,7 @@ def read_parse_md(fname):
         content = f.read()
 
     # parse actions & remove tokens; convert to plain text
-    matches = re.findall(r'(([_*])([^\2]+)\2)', content)
+    matches = re.findall(r'(([_*])([^\2]+?)\2)', content)
     actions = []  # Markdown styling actions
     for match in matches:
         md, dl, pt = match      # MD string, delimiter, plain text string
