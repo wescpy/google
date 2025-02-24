@@ -1,13 +1,33 @@
 # Google API/platform video library by @wescpy
 
-I produced developer videos during my time at Google (2009-2023), primarily for Google Workspace (GWS) and Google Cloud (GCP) tools, APIs, and platforms. On this page, I tried to encapsulate the most relevant of that content. Whenever/whereever possible/available, you'll find relevant code samples, blog posts, codelabs, playlists, and other relevant information & resources for each video.
+I produced developer videos during my time at Google (2009-2023), primarily for Google Workspace (GWS) and Google Cloud (GCP) tools, APIs, and platforms. On this page, I tried to encapsulate most of that content. Whenever/whereever possible/available, you'll find code samples, blog posts, codelabs, playlists, and other relevant information & resources for each video.
 
-Other product APIs featured in a video, or primary APIs featured but not discernable from the title or description are listed in the last column. All related code samples are in Python (2 and/or 3) unless otherwise indicated.
+All related code samples are in Python (2 and/or 3) unless otherwise indicated. You may find duplicate entries for content covering more than one API as there will be rows categorized for each API. This is a continuing work-in-progress as I continue to chase down content and/or add additional resources (esp. items marked as "_tbd_")... check back for updates.
 
-These are broken up by topic or product in order of the most content. Hold Ctrl/Command and mouseclick the thumbnails to open videos in other tabs.
+For some of the older content, I may have posts up on my [old blog](https://wescpy.blogspot.com) along with code samples. My plan is to provide fresh & revised updates to those posts along with making modernized versions of the code samples (plus Node.js versions) on my [current blog](https://dev.to/wescpy). This will happen in a drip-like fashion, slowly, over time as I get to each.
+
+Content is broken up by product, topic, and/or category. Hold Ctrl/Command and mouseclick the thumbnails to open videos in other tabs.
 
 
-## Video and other "artifact" inventory
+## Table of Contents
+- [Google APIs in general](#google-apis-in-general)
+- [Google Workspace / GWS](#google-workspace--gws-gmail-google-drive-docs-sheets-slides-etc) (Gmail, Google Drive, Docs, Sheets, Slides, etc.)
+    - [GWS general/platform or multiple API samples](#gws-generalplatform-or-multiple-api-samples)
+    - [Google Apps Script](#google-apps-script-playlist) ([playlist](https://bit.ly/wescpy-appsscript-vids))
+    - [Google Drive API](#google-drive-api-playlist) ([playlist](https://bit.ly/wescpy-drive-api-vids))
+    - [Gmail API](#gmail-api-playlist-tbd) (playlist _tbd_)
+    - [Google Calendar API](#google-calendar-api-playlist-tbd) (playlist _tbd_)
+    - [Google Sheets API](#google-sheets-api-playlist) ([playlist](http://bit.ly/wescpy-sheets-api-vids))
+    - [Google Slides API](#google-slides-api-playlist) ([playlist](http://bit.ly/wescpy-slides-api-vids))
+    - [Google Chat API and bot/app platform](#google-chat-api-and-botapp-platform-playlist) ([playlist](https://bit.ly/wescpy-chat-api-vids))
+    - [Google Forms API](#google-forms-api)
+- [GWS and GCP interoperability](#gws-and-gcp-interoperability-playlist-tbd) (playlist _tbd_)
+- [GCP general and multiple GCP products](#gcp-general-and-multiple-gcp-products)
+- [GCP serverless platforms](#gcp-serverless-platforms-app-engine-cloud-functions-cloud-run-playlist-tbd) (App Engine, Cloud Functions, Cloud Run; playlist _tbd_)
+    - [Nebulous serverless codelabs](#nebulous-serverless-codelabs-deploy-the-same-app-to-app-engine-cloud-functions-and-cloud-run) (Deploy the same app to App Engine, Cloud Functions, and Cloud Run)
+    - [Google App Engine (GAE) migration from 1st-gen platform](#google-app-engine-gae-migration-from-1st-gen-platform-playlist) ([playlist](http://bit.ly/3xk2Swi))
+- [Miscellaneous](#miscellaneous)
+- [Playlist collection](#relevant-playlists)
 
 
 ### Google APIs in general
@@ -15,8 +35,8 @@ Video | Title | Link(s) | Description | Featured API(s), product(s), feature(s)
 --- | --- | --- | --- | ---
 [![Watch video](https://i.ytimg.com/vi/DYAwYxVs2TI/default.jpg)](https://youtu.be/DYAwYxVs2TI) | The Setup: Creating new apps using Google APIs | [post](https://developers.googleblog.com/2014/11/launchpad-online-for-developers-getting.html) | How to start using Google APIs | Cloud & Developers console
 [![Watch video](https://i.ytimg.com/vi/h-gBeC9Y9cE/default.jpg)](https://youtu.be/h-gBeC9Y9cE) | Accessing Google APIs: Common code walkthrough | [post](https://developers.googleblog.com/2014/11/launchpad-online-for-developers-getting.html) | Understanding OAuth2 boilerplate basics (primarily for GWS APIs) | [Google APIs client libraries](https://developers.google.com/api-client-library) | _(tbd)_
-[![Watch video](https://i.ytimg.com/vi/T1FUDXRB7Ns/default.jpg)](https://youtu.be/T1FUDXRB7Ns) | Using field masks with Google APIs for partial response | [post](http://goo.gl/9kmAEf) | How to minimize data returned from Google API calls | _(tbd)_
-[![Watch video](https://i.ytimg.com/vi/W421BNZA_74/default.jpg)](https://youtu.be/W421BNZA_74) | Using field masks with update requests to Google APIs | [post](http://goo.gl/1Xhm04) | Choosing specific fields to update via Google API calls | _(tbd)_
+[![Watch video](https://i.ytimg.com/vi/T1FUDXRB7Ns/default.jpg)](https://youtu.be/T1FUDXRB7Ns) | Using field masks with Google APIs for partial response | [post](http://goo.gl/9kmAEf) | How to minimize data returned from API calls | _(tbd)_
+[![Watch video](https://i.ytimg.com/vi/W421BNZA_74/default.jpg)](https://youtu.be/W421BNZA_74) | Using field masks with update requests to Google APIs | [post](http://goo.gl/1Xhm04) | Choosing specific fields to update via API calls | _(tbd)_
 
 
 ### Google Workspace / GWS (Gmail, Google Drive, Docs, Sheets, Slides, etc.)
@@ -132,7 +152,7 @@ Video | Title | Link(s) | Description | Featured API(s), product(s), feature(s)
 [![Watch video](https://i.ytimg.com/vi/Px7RQWinK-s/default.jpg)](https://youtu.be/Px7RQWinK-s) | Developing Scalable Apps with Google App Engine | _(n/a)_ | App Engine product overview, part of the "Ask the Experts" series for developers | App Engine
 [![Watch video](https://i.ytimg.com/vi/LhzDB8g1-FQ/default.jpg)](https://youtu.be/LhzDB8g1-FQ) | Google App Engine | _(n/a)_ | Product overview, a Google Developers Day - Berlin 2011 featured presentation | App Engine
 [![Watch video](https://i.ytimg.com/vi/6TZ0e57pdZQ/default.jpg)](https://youtu.be/6TZ0e57pdZQ) | Google App Engine Overview | _(n/a)_ | Product overview, a Google I/O BootCamp 2011 featured presentation | App Engine
-[![Watch video](https://i.ytimg.com/vi/ul1cGarS23M/default.jpg)](https://youtu.be/ul1cGarS23M) | How to use Cloud Run "always-on" CPU allocation for background work | [post](https://cloud.google.com/blog/topics/developers-practitioners/use-cloud-run-always-cpu-allocation-background-work) | Weather alerting Cloud Run app; "Always-on CPU" case study | Cloud Run, Cloud Datastore API
+[![Watch video](https://i.ytimg.com/vi/ul1cGarS23M/default.jpg)](https://youtu.be/ul1cGarS23M) | How to use Cloud Run "always-on" CPU allocation for background work | [post](https://cloud.google.com/blog/topics/developers-practitioners/use-cloud-run-always-cpu-allocation-background-work), [repo](https://github.com/GoogleCloudPlatform/serverless-expeditions/tree/main/cloud-run-alwayson-cpu-weather-advisory) | Weather alerting Cloud Run app; "Always-on CPU" case study | Cloud Run, Cloud Datastore API
 [![Watch video](https://i.ytimg.com/vi/eZj7uM9HaMg/default.jpg)](https://youtu.be/eZj7uM9HaMg) | Change the world in 10 lines of code | _(n/a)_ | Explores how you can change the world with [inbound email processing](https://cloud.google.com/appengine/docs/standard/services/mail/receiving-mail-with-mail-api) | App Engine
 
 
