@@ -17,10 +17,7 @@
 
 from io import BytesIO
 from PIL import Image
-
 from google import genai
-from google.genai import types
-
 from settings import GOOGLE_API_KEY
 
 # set constants
@@ -28,7 +25,7 @@ GENAI = genai.Client(api_key=GOOGLE_API_KEY)
 MODEL = 'gemini-2.0-flash-exp'
 CONFIG = {'generation_config': {'response_modalities': ['Text', 'Image']}}
 PROMPT = 'Create an image of a cat in a spacesuit driving a moon buggy. ' \
-                'Also return a caption for the image.'
+            'Also return a caption for the image.'
 FILENAME = 'spacecat.png'
 
 # Generate image with Gemini 2
@@ -44,8 +41,8 @@ response = GENAI.models.generate_content(
 # Process results
 for part in response.candidates[0].content.parts:
     if part.text:
-        print(f'    Generated text: {part.text.strip()}')
+        print(f'Generated text: {part.text.strip()}')
     elif part.inline_data:
         image = Image.open(BytesIO((part.inline_data.data)))
         image.save(FILENAME)
-        print(f'    Image saved to: {FILENAME}')
+        print(f'Image saved to: {FILENAME}')

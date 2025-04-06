@@ -15,15 +15,15 @@
 // FILE:    gem20-image.js
 // POST:    dev.to/wescpy/TBD
 
+const fs = require('fs');
 require('dotenv').config();
 const { GoogleGenAI } = require('@google/genai');
-const fs = require('fs');
 
 // set constants
 const MODEL = 'gemini-2.0-flash-exp';
 const CONFIG = { responseModalities: ['Text', 'Image'] };
 const PROMPT = 'Create an image of a cat in a spacesuit driving a moon buggy.'
-                    + 'Also return a caption for the image.';
+                + 'Also return a caption for the image.';
 const FILENAME = 'spacecat.png';
 
 async function main() {
@@ -31,22 +31,22 @@ async function main() {
   console.log(`** GenAI image: '${MODEL}' model & prompt '${PROMPT}'\n`);
   const GENAI = new GoogleGenAI({ apiKey: process.env.GOOGLE_API_KEY });
   const response = await GENAI.models.generateContent({
-      model: MODEL,
-      contents: PROMPT,
-      config: CONFIG,
+    model: MODEL,
+    contents: PROMPT,
+    config: CONFIG,
   });
 
   // Process results
   for (const part of response.candidates[0].content.parts) {
-      if (part.text) {
-          console.log(`    Generated text: ${part.text.trim()}`);
-      } else if (part.inlineData) {
-          const imageData = part.inlineData.data;
-          const buffer = Buffer.from(imageData, 'base64');
-          fs.writeFileSync(FILENAME, buffer);
-          console.log(`    Image saved to: ${FILENAME}`);
-      }
-   }
+    if (part.text) {
+      console.log(`Generated text: ${part.text.trim()}`);
+    } else if (part.inlineData) {
+      const image = part.inlineData.data;
+      const buffer = Buffer.from(image, 'base64');
+      fs.writeFileSync(FILENAME, buffer);
+      console.log(`Image saved to: ${FILENAME}`);
+    }
+  }
 }
 
 main();
