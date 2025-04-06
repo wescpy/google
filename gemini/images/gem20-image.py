@@ -21,28 +21,25 @@ from google import genai
 from settings import GOOGLE_API_KEY
 
 # set constants
-GENAI = genai.Client(api_key=GOOGLE_API_KEY)
 MODEL = 'gemini-2.0-flash-exp'
-CONFIG = {'generation_config': {'response_modalities': ['Text', 'Image']}}
-PROMPT = 'Create an image of a cat in a spacesuit driving a moon buggy. ' \
-            'Also return a caption for the image.'
+GENAI = genai.Client(api_key=GOOGLE_API_KEY)
+#GENAI = genai.Client()  # read from GOOGLE_API_KEY env var
+CONFIG = genai.types.GenerateContentConfig(
+        response_modalities=['Text', 'Image'])
+PROMPT = 'Create an image of a cat in a spacesuit driving a moon buggy.' \
+            ' Also return a caption for the image.'
 FILENAME = 'spacecat.png'
 
 # Generate image with Gemini 2
-print(f"** GenAI image: '{MODEL}' model & prompt '{PROMPT}\n")
+print(f"MODEL:\t\t'{MODEL}'\nPROMPT:\t\t'{PROMPT}\n")
 response = GENAI.models.generate_content(
-    model=MODEL,
-    contents=PROMPT,
-    config=types.GenerateContentConfig(
-        response_modalities=['Text', 'Image'],
-    )
-)
+        model=MODEL, contents=PROMPT, config=CONFIG)
 
 # Process results
 for part in response.candidates[0].content.parts:
     if part.text:
-        print(f'Generated text: {part.text.strip()}')
+        print(f"CAPTION:\t{part.text.strip().replace('**Caption:** ', '')}")
     elif part.inline_data:
         image = Image.open(BytesIO((part.inline_data.data)))
         image.save(FILENAME)
-        print(f'Image saved to: {FILENAME}')
+        print(f'IMAGE:\t\t{FILENAME}')

@@ -12,7 +12,7 @@ App | Platform
 --- | ---
 [`gem20-image.js`](/gemini/images/gem20-image.js) | CommonJS Node.js script
 [`gem20-image.mjs`](/gemini/images/gem20-image.mjs) | ECMAscript Node.js module
-[`package.json`](/gemini/images/package.json) | NPM package file
+[`package.json`](/gemini/images/package.json) | NPM packages file
  | |
 [`gem20-image.py`](/gemini/images/gem20-image.py) | Python 3 script
 [`requirements.txt`](/gemini/images/requirements.txt) | `pip` requirements file
@@ -23,18 +23,21 @@ App | Platform
 ### Node.js
 
 1. Ensure your Node (and NPM) installation is up-to-date (recommend 18+)
-1. `cd nodejs`
 1. Install packages: `npm i`
 1. [Create API key](https://makersuite.google.com/app/apikey) and either save to `.env` file as `GOOGLE_API_KEY = <YOUR_API_KEY>;` or to `GOOGLE_API_KEY` environment variable.
-1. Run `node main.js` or `node main.mjs`
+1. Run `node gem20-image.js` or `node gem20-image.mjs`
 
 ### Python
 
 1. Ensure your Python (and `pip`) installation is up-to-date (recommend 3.9+)
-1. `cd python` and optionally [create & activate a virtual environment ("virtualenv") for isolation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments)
-1. Install packages: `pip install -r requirements.txt` (or `pip3`)
+1. (optional) [Create & activate a virtual environment ("virtualenv") for isolation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments)
+    - `python3 -m venv myenv; source myenv/bin/activate`
+1. (optional) Update `pip` and install `uv`: `pip install -U pip uv`
+1. Install packages:
+    - `pip install -Ur requirements.txt` (or `pip3`)
+    - (optional) If using `uv`: `uv pip install -Ur requirements.txt`
 1. [Create API key](https://makersuite.google.com/app/apikey) and either save to `settings.py` file as `GOOGLE_API_KEY = 'YOUR_API_KEY'` or to `GOOGLE_API_KEY` environment variable.
-1. Run `python main.py` (or `python3`)
+1. Run `python gem20-image.py` (or `python3`)
 
 | :memo: Gemini API also accessible from GCP Vertex AI |
 |:---------------------------|
