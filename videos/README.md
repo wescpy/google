@@ -199,7 +199,7 @@ Video | Title | Link(s) | Description | Featured API(s), product(s), feature(s)
 [![Watch video](https://i.ytimg.com/vi/D7BpG0e73-Y/default.jpg)](https://youtu.be/D7BpG0e73-Y) | Faculty Summit: Create Your Own Codelab | _(n/a)_ | How to create "codelabs" (self-paced, hands-on tutorials) | [`claat` codelab generator tool](https://github.com/googlecodelabs/tools)
 
 
-## Relevant playlists
+## Playlist collection
 Most of the videos above belong to one of these playlists:
 
 Video Series | Info link | Intended audience (but open to all)

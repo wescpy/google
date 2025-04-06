@@ -22,7 +22,7 @@ import wave
 from google import genai
 from settings import API_KEY
 
-CLIENT = genai.Client(api_key=API_KEY, http_options={'api_version': 'v1alpha'})
+GENAI = genai.Client(api_key=API_KEY, http_options={'api_version': 'v1alpha'})
 MODEL = 'gemini-2.0-flash-exp'
 CONFIG = {'generation_config': {'response_modalities': ['AUDIO']}}
 PROMPT = 'Describe a cat in a few sentences'
@@ -40,7 +40,7 @@ def wave_file(filename, channels=1, rate=24000, sample_width=2):
 async def request_audio(prompt=PROMPT, filename=FILENAME):
     'request LLM generate audio file given prompt'
     print(f'\n** LLM prompt: "{prompt}"')
-    async with CLIENT.aio.live.connect(model=MODEL, config=CONFIG) as session:
+    async with GENAI.aio.live.connect(model=MODEL, config=CONFIG) as session:
         with wave_file(filename) as f:
             await session.send(prompt, end_of_turn=True)
             async for response in session.receive():
