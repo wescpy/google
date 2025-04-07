@@ -1,10 +1,10 @@
 # Google Gemini API image generation app samples
 
-These are the code samples that are found in the (forthcoming) 5th post in the [Gemini API series](https://dev.to/wescpy/series/27183).
+These are the code samples that are found in the [5th post](https://dev.to/wescpy/generating-images-with-gemini-20-flash-from-google-448e) in the [Gemini API series](https://dev.to/wescpy/series/27183).
 
 | :exclamation: API key required |
 |:---------------------------|
-| An API key is required to use Google's Gemini API. Follow the instructions below. The app will ***not*** run without being added to the `GOOGLE_API_KEY` environment variable or saved to a `.env` file (Node.js) or `settings.py` (Python). |
+| An API key is required to use the Gemini API. Follow the instructions below. The app will ***not*** run without being added to the `GOOGLE_API_KEY` environment variable or saved to a local file, `.env` (Node.js) or `settings.py` (Python). |
 
 
 ## Code samples

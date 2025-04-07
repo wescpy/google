@@ -44,6 +44,7 @@ Code | Sample | Blog post
 &nbsp; | &nbsp; | &nbsp;
 [`gemini/*`](/gemini/) | Google AI Gemini API samples (Node.js & Python) | [Gemini API "Hello World!"](https://dev.to/wescpy/a-better-google-gemini-api-hello-world-sample-4ddm), [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7), [Gemini 2.0 Audio](https://dev.to/wescpy/generate-audio-clips-with-gemini-20-flash-from-google-n0g)
 [`gemini/webgem/`](/gemini/webgem) | Google AI Gemini API web apps (Node.js & Python) | [Gemini 102a: Creating basic gen AI web apps](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3)
+[`gemini/images/`](/gemini/images) | Google AI Gemini API image generation samples (Node.js & Python) | [Generating images with Gemini 2.0 Flash from Google](https://dev.to/wescpy/generating-images-with-gemini-20-flash-from-google-448e)
 &nbsp; | &nbsp; | &nbsp;
 [`maps/`](/maps) | Maps Geocoding, Directions, and Time Zone APIs (Node.js & Python) | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 [`maps/maps_geocode.py`](/maps/maps_geocode.py) | Geolocate address with Maps Geocoding API | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
