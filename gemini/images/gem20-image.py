@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    gem20-image.py
-# POST:    dev.to/wescpy/TBD
+# POST:    dev.to/wescpy/generating-images-with-gemini-20-flash-from-google-448e
 
 from io import BytesIO
 from PIL import Image
@@ -31,7 +31,7 @@ PROMPT = 'Create an image of a cat in a spacesuit driving a moon buggy.' \
 FILENAME = 'spacecat.png'
 
 # Generate image with Gemini 2
-print(f"MODEL:\t\t'{MODEL}'\nPROMPT:\t\t'{PROMPT}\n")
+print(f"MODEL:\t\t'{MODEL}'\nPROMPT:\t\t'{PROMPT}'\n")
 response = GENAI.models.generate_content(
         model=MODEL, contents=PROMPT, config=CONFIG)
 

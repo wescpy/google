@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 // FILE:    gem20-image.js
-// POST:    dev.to/wescpy/TBD
+// POST:    dev.to/wescpy/generating-images-with-gemini-20-flash-from-google-448e
 
 const fs = require('fs');
 require('dotenv').config();
