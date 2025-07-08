@@ -20,7 +20,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 const PROMPT = 'Describe a cat in a few sentences';
 const MODEL = 'gemini-1.5-flash';
-console.log(`** GenAI text: '${MODEL}' model & prompt '${PROMPT}'\n`)
+console.log(`** GenAI text: '${MODEL}' model & prompt '${PROMPT}'\n`);
 
 async function main() {
   const genAI = new GoogleGenerativeAI(process.env.API_KEY);

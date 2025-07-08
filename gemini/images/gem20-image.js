@@ -21,7 +21,7 @@ const { GoogleGenAI } = require('@google/genai');
 
 // set constants
 const MODEL = 'gemini-2.0-flash-exp';
-const GENAI = new GoogleGenAI({ apiKey: process.env.GOOGLE_API_KEY });
+const GENAI = new GoogleGenAI({ apiKey: process.env.API_KEY });
 const CONFIG = { responseModalities: ['Text', 'Image'] };
 const PROMPT = 'Create an image of a cat in a spacesuit driving a moon buggy.'
                 + ' Also return a caption for the image.';

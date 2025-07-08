@@ -18,12 +18,12 @@
 from io import BytesIO
 from PIL import Image
 from google import genai
-from settings import GOOGLE_API_KEY
+from settings import API_KEY
 
 # set constants
 MODEL = 'gemini-2.0-flash-exp'
-GENAI = genai.Client(api_key=GOOGLE_API_KEY)
-#GENAI = genai.Client()  # read from GOOGLE_API_KEY env var
+GENAI = genai.Client(api_key=API_KEY)
+#GENAI = genai.Client()  # read from GEMINI_API_KEY env var
 CONFIG = genai.types.GenerateContentConfig(
         response_modalities=['Text', 'Image'])
 PROMPT = 'Create an image of a cat in a spacesuit driving a moon buggy.' \

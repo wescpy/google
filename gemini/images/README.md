@@ -4,7 +4,7 @@ These are the code samples from the [5th post](https://dev.to/wescpy/generating-
 
 | :exclamation: API key required |
 |:---------------------------|
-| An API key is required to use the Gemini API. Follow the instructions below. The app will ***not*** run without being added to the `GOOGLE_API_KEY` environment variable or saved to a local file, `.env` (Node.js) or `settings.py` (Python). |
+| An API key is required to use the Gemini API. Follow the instructions below. The app will ***not*** run without being added to the `GEMINI_API_KEY` environment variable or saved to a local file, `.env` (Node.js) or `settings.py` (Python). |
 
 ## Code samples
 App | Platform
@@ -22,7 +22,7 @@ App | Platform
 
 1. Ensure your Node (and NPM) installation is up-to-date (recommend 18+)
 1. Install packages: `npm i`
-1. [Create API key](https://makersuite.google.com/app/apikey) and either save to `.env` file as `GOOGLE_API_KEY = <YOUR_API_KEY>;` or to `GOOGLE_API_KEY` environment variable.
+1. [Create API key](https://makersuite.google.com/app/apikey) and either save to `.env` file as `GEMINI_API_KEY = <YOUR_API_KEY>;` or to `GEMINI_API_KEY` environment variable.
 1. Run `node gem20-image.js` or `node gem20-image.mjs`
 
 ### Python
@@ -34,7 +34,7 @@ App | Platform
 1. Install packages:
     - `pip install -Ur requirements.txt` (or `pip3`)
     - (optional) If using `uv`: `uv pip install -Ur requirements.txt`
-1. [Create API key](https://makersuite.google.com/app/apikey) and either save to `settings.py` file as `GOOGLE_API_KEY = 'YOUR_API_KEY'` or to `GOOGLE_API_KEY` environment variable.
+1. [Create API key](https://makersuite.google.com/app/apikey) and either save to `settings.py` file as `GEMINI_API_KEY = 'YOUR_API_KEY'` or to `GEMINI_API_KEY` environment variable.
 1. Run `python gem20-image.py` (or `python3`)
 
 | :memo: Gemini API also accessible from GCP Vertex AI |

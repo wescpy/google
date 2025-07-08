@@ -16,13 +16,12 @@
 // POST:    dev.to/wescpy/generating-images-with-gemini-20-flash-from-google-448e
 
 import * as fs from 'node:fs';
-import dotenv from 'dotenv';
+import 'dotenv/config';
 import { GoogleGenAI } from '@google/genai';
 
 // set constants
-dotenv.config();
 const MODEL = 'gemini-2.0-flash-exp';
-const GENAI = new GoogleGenAI({ apiKey: process.env.GOOGLE_API_KEY });
+const GENAI = new GoogleGenAI({ apiKey: process.env.API_KEY });
 const CONFIG = { responseModalities: ['Text', 'Image'] };
 const PROMPT = 'Create an image of a cat in a spacesuit driving a moon buggy.'
                 + ' Also return a caption for the image.';
