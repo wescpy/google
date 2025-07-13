@@ -6,8 +6,8 @@ These are the code samples from the [5th post](https://dev.to/wescpy/generating-
 |:---------------------------|
 | An API key is required to use the Gemini API. Follow the instructions below. The app will ***not*** run without being added to the `GEMINI_API_KEY` environment variable or saved to a local file, `.env` (Node.js) or `settings.py` (Python). |
 
-## Code samples
-App | Platform
+## Google AI code samples
+App | Description
 --- | ---
 [`gem20-image.js`](/gemini/images/gem20-image.js) | CommonJS Node.js script
 [`gem20-image.mjs`](/gemini/images/gem20-image.mjs) | ECMAscript Node.js module
