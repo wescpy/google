@@ -7,7 +7,7 @@ These are the code samples from the _upcoming 6th post_ in the [Gemini API serie
 | :exclamation: Platform requirements |
 |:---------------------------|
 | **GAI**: [API key](https://cloud.google.com/docs/authentication/api-keys-use) is required. Follow the instructions below. The GAI scripts will ***not*** run without an API key which should be either assigned to the `GEMINI_API_KEY` environment variable or saved to a local file, `.env` (Node.js) or `settings.py` (Python). |
-| **GCP**: API key (as above) or better yet, [user auth via ADC](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) for local dev environments running these sample scripts. (For production, use [service accounts](https://cloud.google.com/docs/authentication#service-accounts).)
+| **GCP**: [User auth via ADC](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) for local dev environments is required to run the old client library sample scripts. While the new combined client library also supports API keys, user auth/ADC is still recommended. (For production, use [service accounts](https://cloud.google.com/docs/authentication#service-accounts).)
 
 
 ## Code samples
@@ -65,11 +65,11 @@ App | Platform(s) | Client library | Description
 ### Node.js
 1. Create credentials (choose one):
     - (_recommended_) [Login with user auth & set ADC for local dev environment](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment).
-    - API key: follow same instructions as for GAI above
+    - API key (only works for current client library): follow same instructions as for GAI above
 1. Run any of the Node scripts, e.g., `node gem25txt-simple-gcp-cur.js`
 
 ### Python
 1. Create credentials (choose one):
     - (_recommended_) [Login with user auth & set ADC for local dev environment](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment).
-    - API key: follow same instructions as for GAI above
+    - API key (only works for current client library): follow same instructions as for GAI above
 1. Run any of the Python scripts, e.g., `python gem25txt-simple-gcp-old.py` (or `python3`)
