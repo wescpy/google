@@ -2,36 +2,41 @@
 
 ## Old (separate) client libraries and current (combined) client library
 
-These are the code samples from the _upcoming 6th post_ in the [Gemini API series](https://dev.to/wescpy/series/27183) for running on the [Google AI](https://ai.google.dev) (GAI) platform or the [Vertex AI](https://cloud.google.com/vertex-ai) (GCP) platform. More information about the scripts are in the post.
+These are the code samples from the _forthcoming_ 6th post in the [Gemini API series](https://dev.to/wescpy/series/27183) for running on the [Google AI](https://ai.google.dev) (GAI) and [Vertex AI](https://cloud.google.com/vertex-ai) (GCP) platforms. The post details how to use the Gemini 2.5 API as well as how to upgrade from older client libraries for Gemini 1.0 & 1.5. More information about migration and the code are in the post.
 
-| :exclamation: Platform requirements |
+| :warning: Required credentials |
 |:---------------------------|
 | **GAI**: [API key](https://cloud.google.com/docs/authentication/api-keys-use) is required. Follow the instructions below. The GAI scripts will ***not*** run without an API key which should be either assigned to the `GEMINI_API_KEY` environment variable or saved to a local file, `.env` (Node.js) or `settings.py` (Python). |
-| **GCP**: [User auth via ADC](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) for local dev environments is required to run the old client library sample scripts. While the new combined client library also supports API keys, user auth/ADC is still recommended. (For production, use [service accounts](https://cloud.google.com/docs/authentication#service-accounts).)
+| **GCP**: [User auth via ADC](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) for local dev environments is required to run the old client library code and recommended for current library code. The current library also supports API keys, but user auth/ADC is still recommended (more secure). (For production, use [service accounts](https://cloud.google.com/docs/authentication#service-accounts).)
+
+| :moneybag: Cost considerations |
+|:---------------------------|
+| **GAI**: Google AI has a free tier; see its [pricing page](https://ai.google.dev/pricing) for more information. |
+| **GCP**: Vertex AI does ***not*** have a free tier, and an active billing account is required, so definitely check out its [pricing page](https://cloud.google.com/vertex-ai/generative-ai/pricing) to find out how much it'll cost to run the GCP scripts. |
 
 
 ## Code samples
-App | Platform(s) | Client library | Description
+
+### Script applications
+Scripts are available in Python 3 & Node.js, the latter as both ECMAscript modules as well as CommonJS scripts. To compare like-scripts, the old client library version sits above its current client library equivalent.
+
+Client library | Python | ECMAscript | CommonJS
 --- | --- | --- | ---
-**Node.js**
-[`gem25txt-simple-gai-cur.js`](/gemini/gem25/gem25txt-simple-gai-cur.js) | GAI | GenAI (current) | CommonJS Node.js script
-[`gem25txt-simple-gai-cur.mjs`](/gemini/gem25/gem25txt-simple-gai-cur.mjs) | GAI | GenAI (current) | ECMAscript Node.js module
-[`gem25txt-simple-gai-old.js`](/gemini/gem25/gem25txt-simple-gai-old.js) | GAI | GenerativeAI (old) | CommonJS Node.js script
-[`gem25txt-simple-gai-old.mjs`](/gemini/gem25/gem25txt-simple-gai-old.mjs) | GAI | GenerativeAI (old) | ECMAscript Node.js module
-[`gem25txt-simple-gcp-cur.js`](/gemini/gem25/gem25txt-simple-gcp-cur.js) | GCP | GenAI (current) | CommonJS Node.js script
-[`gem25txt-simple-gcp-cur.mjs`](/gemini/gem25/gem25txt-simple-gcp-cur.mjs) | GCP | GenAI (current) | ECMAscript Node.js module
-[`gem25txt-simple-gcp-old.js`](/gemini/gem25/gem25txt-simple-gcp-old.js) | GCP | GenerativeAI (old) | CommonJS Node.js script
-[`gem25txt-simple-gcp-old.mjs`](/gemini/gem25/gem25txt-simple-gcp-old.mjs) | GCP | GenerativeAI (old) | ECMAscript Node.js module
-[`package.json`](/gemini/gem25/package.json) | _both platforms_ | _both libraries_ | NPM packages file
-[`.env_TMPL`](/gemini/gem25/.env_TMPL) | _both platforms_ | _both libraries_ | `.env` template file
- | | |
-**Python**
-[`gem25txt-simple-gai-cur.py`](/gemini/gem25/gem25txt-simple-gai-cur.py) | GAI | GenAI (current) | Python 3 script
-[`gem25txt-simple-gai-old.py`](/gemini/gem25/gem25txt-simple-gai-old.py) | GAI | VertexAI (old) | Python 3 script
-[`gem25txt-simple-gcp-cur.py`](/gemini/gem25/gem25txt-simple-gcp-cur.py) | GCP | GenAI (current) | Python 3 script
-[`gem25txt-simple-gcp-old.py`](/gemini/gem25/gem25txt-simple-gcp-old.py) | GCP | VertexAI (old) | Python 3 script
-[`requirements.txt`](/gemini/gem25/requirements.txt) | _both platforms_ | _both libraries_ | `pip` requirements file
-[`settings_TMPL.py`](/gemini/gem25/settings_TMPL.py) | _both platforms_ | _both libraries_ | `settings.py` template file
+**GAI**
+GenerativeAI (old) | [`gem25txt-simple-gai-old.py`](/gemini/gem25/gem25txt-simple-gai-old.py) | [`gem25txt-simple-gai-old.mjs`](/gemini/gem25/gem25txt-simple-gai-old.mjs) | [`gem25txt-simple-gai-old.js`](/gemini/gem25/gem25txt-simple-gai-old.js)
+GenAI (current) | [`gem25txt-simple-gai-cur.py`](/gemini/gem25/gem25txt-simple-gai-cur.py) | [`gem25txt-simple-gai-cur.js`](/gemini/gem25/gem25txt-simple-gai-cur.js) | [`gem25txt-simple-gai-cur.mjs`](/gemini/gem25/gem25txt-simple-gai-cur.mjs)
+ | | | |
+**GCP**
+VertexAI (old) | [`gem25txt-simple-gcp-old.py`](/gemini/gem25/gem25txt-simple-gcp-old.py) | [`gem25txt-simple-gcp-old.mjs`](/gemini/gem25/gem25txt-simple-gcp-old.mjs) | [`gem25txt-simple-gcp-old.js`](/gemini/gem25/gem25txt-simple-gcp-old.js)
+GenAI (current) | [`gem25txt-simple-gcp-cur.py`](/gemini/gem25/gem25txt-simple-gcp-cur.py) | [`gem25txt-simple-gcp-cur.mjs`](/gemini/gem25/gem25txt-simple-gcp-cur.mjs) | [`gem25txt-simple-gcp-cur.js`](/gemini/gem25/gem25txt-simple-gcp-cur.js)
+
+### Configuration files
+The config files include old & current client library packages and apply to both platforms.
+
+Description | Python | Node.js
+--- | --- | ---
+Packages | [`requirements.txt`](/gemini/gem25/requirements.txt) | [`package.json`](/gemini/gem25/package.json)
+Settings | [`settings_TMPL.py`](/gemini/gem25/settings_TMPL.py) | [`.env_TMPL`](/gemini/gem25/.env_TMPL)
 
 
 ## General instructions (GAI & GCP)
@@ -51,25 +56,15 @@ App | Platform(s) | Client library | Description
 
 ## GAI-specific instructions
 
-### Node.js
-1. [Create API key](https://makersuite.google.com/app/apikey) and either save to `GEMINI_API_KEY` environment variable or copy the `.env_TMPL` file to `.env` and assign the key to `API_KEY`.
-1. Run any of the Node scripts, e.g., `node gem25txt-simple-gai-old.mjs`
-
-### Python
-1. [Create API key](https://makersuite.google.com/app/apikey) and either save to `GEMINI_API_KEY` environment variable or copy the `settings_TMPL.py` file to `settings.py` and assign the key to `API_KEY`.
-1. Run any of the Python scripts, e.g., `python gem25txt-simple-gai-cur.py` (or `python3`)
-
+1. **Set credentials:** [Create API key](https://makersuite.google.com/app/apikey) (or reuse existing one).
+1. Either save the API key to `GEMINI_API_KEY` environment variable or copy the template for your language `.env_TMPL` (Node) or `settings_TMPL.py` (Python) file to `.env` (Node) or `settings.py` (Python) and assign the key to `API_KEY`.
+    - If using the `GEMINI_API_KEY` environment variable, simplify the code to not look in `.env` or `settings.py` before running (use commented-out line). (This only affects scripts named `gem25txt-simple-gai-cur.*`.)
+1. Run any of the scripts, e.g., `node gem25txt-simple-gai-old.mjs`, `python3 gem25txt-simple-gai-cur.py`, etc.
 
 ## GCP-specific instructions
 
-### Node.js
-1. Create credentials (choose one):
-    - (_recommended_) [Login with user auth & set ADC for local dev environment](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment).
-    - API key (only works for current client library): follow same instructions as for GAI above
-1. Run any of the Node scripts, e.g., `node gem25txt-simple-gcp-cur.js`
-
-### Python
-1. Create credentials (choose one):
-    - (_recommended_) [Login with user auth & set ADC for local dev environment](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment).
-    - API key (only works for current client library): follow same instructions as for GAI above
-1. Run any of the Python scripts, e.g., `python gem25txt-simple-gcp-old.py` (or `python3`)
+1. **Set credentials:** [Login with user auth & set ADC for local dev environment](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment).
+    - The new client library supports API keys, so if you prefer this, then follow the GAI instructions above.
+1. Copy the template for your language `.env_TMPL` (Node) or `settings_TMPL.py` (Python) file to `.env` (Node) or `settings.py` (Python) and set the values for `YOUR_GCP_PROJECT` and `YOUR_GCP_REGION`.
+    - If using an API key instead of ADC, assign it to `API_KEY` in `.env` (Node) or `settings.py` (Python), and update the code to use it before running (use commented-out line). (This only affects scripts named `gem25txt-simple-gcp-cur.*`.)
+1. Run any of the scripts, e.g., `node gem25txt-simple-gcp-cur.js`, `python3 gem25txt-simple-gcp-old.py`, etc.
