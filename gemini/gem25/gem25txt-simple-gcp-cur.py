@@ -16,13 +16,13 @@
 # POST:    TBD
 
 from google import genai
-from settings import GCP_METADATA
+from settings import GCP_METADATA  # API_KEY if using API key
 
 PROMPT = 'Describe a cat in a few sentences'
 MODEL = 'gemini-2.5-flash'
 print('** GenAI text: %r model & prompt %r\n' % (MODEL, PROMPT))
 
 GENAI = genai.Client(vertexai=True, **GCP_METADATA)
-# GENAI = genai.Client(api_key=API_KEY)  # if using API key & imported from settings
+# GENAI = genai.Client(api_key=API_KEY)  # use API key imported from settings
 response = GENAI.models.generate_content(model=MODEL, contents=PROMPT)
 print(response.text)

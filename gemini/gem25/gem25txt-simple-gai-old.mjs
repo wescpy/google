@@ -22,9 +22,9 @@ const PROMPT = 'Describe a cat in a few sentences';
 const MODEL = 'gemini-2.5-flash';
 console.log(`** GenAI text: '${MODEL}' model & prompt '${PROMPT}'\n`);
 
+const GENAI = new GoogleGenerativeAI(process.env.API_KEY);
+const model = GENAI.getGenerativeModel({ model: MODEL });
 async function main() {
-  const GENAI = new GoogleGenerativeAI(process.env.API_KEY);
-  const model = GENAI.getGenerativeModel({ model: MODEL });
   const result = await model.generateContent(PROMPT);
   console.log(await result.response.text());
 }
