@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    gem25txt-simple-gcp-cur.py
-# POST:    TBD
+# POST:    bit.ly/4kFkmLm
 
 from google import genai
 from settings import GCP_METADATA  # API_KEY if using API key

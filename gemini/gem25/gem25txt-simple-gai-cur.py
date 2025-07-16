@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    gem25txt-simple-gai-cur.py
-# POST:    TBD
+# POST:    bit.ly/4kFkmLm
 
 from google import genai
 from settings import API_KEY

@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    gem25txt-simple-gai-old.py
-# POST:    TBD
+# POST:    bit.ly/4kFkmLm
 
 import google.generativeai as genai
 from settings import API_KEY

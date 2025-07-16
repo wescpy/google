@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 // FILE:    gem25txt-simple-gcp-old.js
-// POST:    TBD
+// POST:    bit.ly/4kFkmLm
 
 require('dotenv').config();
 const { VertexAI } = require('@google-cloud/vertexai');

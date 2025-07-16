@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 // FILE:    gem25txt-simple-gai-old.mjs
-// POST:    TBD
+// POST:    bit.ly/4kFkmLm
 
 import 'dotenv/config';
 import { GoogleGenerativeAI } from '@google/generative-ai';

@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 // FILE:    gem25txt-simple-gai-cur.mjs
-// POST:    TBD
+// POST:    bit.ly/4kFkmLm
 
 import 'dotenv/config';
 import { GoogleGenAI } from "@google/genai";

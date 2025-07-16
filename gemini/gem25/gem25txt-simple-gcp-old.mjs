@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 // FILE:    gem25txt-simple-gcp-old.mjs
-// POST:    TBD
+// POST:    bit.ly/4kFkmLm
 
 import 'dotenv/config';
 import { VertexAI } from "@google-cloud/vertexai";

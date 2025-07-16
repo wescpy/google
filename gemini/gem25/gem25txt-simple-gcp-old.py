@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    gem25txt-simple-gcp-old.py
-# POST:    TBD
+# POST:    bit.ly/4kFkmLm
 
 from vertexai import init, generative_models
 from settings import GCP_METADATA
