@@ -2,7 +2,7 @@
 
 ## Old (separate) client libraries and current (combined) client library
 
-These are the code samples from the _forthcoming_ 6th post in the [Gemini API series](https://dev.to/wescpy/series/27183) for running on the [Google AI](https://ai.google.dev) (GAI) and [Vertex AI](https://cloud.google.com/vertex-ai) (GCP) platforms. The post details how to use the Gemini 2.5 API as well as how to upgrade from older client libraries for Gemini 1.0 & 1.5. More information about migration and the code are in the post.
+These are the code samples from the [6th post](https://dev.to/wescpy/gemini-25-api-missing-manual-how-to-get-started-or-upgrade-from-gemini-1015-1el6) in the [Gemini API series](https://dev.to/wescpy/series/27183) for running on the [Google AI](https://ai.google.dev) (GAI) and [Vertex AI](https://cloud.google.com/vertex-ai) (GCP) platforms. The post details how to use the Gemini 2.5 API as well as how to upgrade from older client libraries for Gemini 1.0 & 1.5. More information about migration and the code are in the post.
 
 | :warning: Required credentials |
 |:---------------------------|
