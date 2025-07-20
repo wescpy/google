@@ -23,6 +23,6 @@ MODEL = 'gemini-2.5-flash'
 print('** GenAI text: %r model & prompt %r\n' % (MODEL, PROMPT))
 
 GENAI = genai.Client(api_key=API_KEY)
-#GENAI = genai.Client()  # if env var GEMINI_API_KEY set
+# GENAI = genai.Client()  # use API key in GEMINI_API_KEY env var
 response = GENAI.models.generate_content(model=MODEL, contents=PROMPT)
 print(response.text)

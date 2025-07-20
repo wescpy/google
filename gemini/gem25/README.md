@@ -7,7 +7,7 @@ These are the code samples from the [6th post](https://bit.ly/4kFkmLm) in the [G
 | :warning: Required credentials |
 |:---------------------------|
 | **GAI**: [API key](https://cloud.google.com/docs/authentication/api-keys-use) is required. Follow the instructions below. The GAI scripts will ***not*** run without an API key which should be either assigned to the `GEMINI_API_KEY` environment variable or saved to a local file, `.env` (Node.js) or `settings.py` (Python). |
-| **GCP**: [User auth via ADC](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) for local dev environments is required to run the old client library code and recommended for current library code. The current library also supports API keys, but user auth/ADC is still recommended (more secure). (For production, use [service accounts](https://cloud.google.com/docs/authentication#service-accounts).)
+| **GCP**: [User auth via ADC](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment) for local dev environments is **required** to run the _old_ client library code and **recommended** for _current_ library code. The current library also supports API keys, but user auth/ADC is recommended as it's more secure. (For production, use [service accounts](https://cloud.google.com/docs/authentication#service-accounts). [I don't believe Google has documentation on how to do this, so I may have to do so in an upcoming post as I blog about things that Google should document.])
 
 | :moneybag: Cost considerations |
 |:---------------------------|

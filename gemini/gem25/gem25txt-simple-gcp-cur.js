@@ -24,7 +24,8 @@ console.log(`** GenAI text: '${MODEL}' model & prompt '${PROMPT}'\n`);
 
 const CONFIG = JSON.parse(process.env.GCP_METADATA);
 const GENAI = new GoogleGenAI({ vertexai: true, ...CONFIG });
-//const GENAI = new GoogleGenAI({ apiKey: process.env.API_KEY });  // use API key from .env
+// const GENAI = new GoogleGenAI({ apiKey: process.env.API_KEY });  // use API key from .env
+// const GENAI = new GoogleGenAI({}); // use API key in GEMINI_API_KEY env var
 
 async function main() {
   const response = await GENAI.models.generateContent({

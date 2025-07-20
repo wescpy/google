@@ -23,7 +23,7 @@ const MODEL = 'gemini-2.5-flash';
 console.log(`** GenAI text: '${MODEL}' model & prompt '${PROMPT}'\n`);
 
 const GENAI = new GoogleGenAI({ apiKey: process.env.API_KEY });
-// const GENAI = new GoogleGenAI({}); // if env var GEMINI_API_KEY set
+// const GENAI = new GoogleGenAI({}); // use API key in GEMINI_API_KEY env var
 
 async function main() {
   const response = await GENAI.models.generateContent({
