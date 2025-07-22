@@ -20,15 +20,18 @@ These are the code samples from the [6th post](https://bit.ly/4kFkmLm) in the [G
 ### Script applications
 Scripts are available in Python 3 & Node.js, the latter as both ECMAscript modules as well as CommonJS scripts. To compare like-scripts, the old client library version sits above its current client library equivalent.
 
-Client library | Python | ECMAscript | CommonJS
+Client library | Python (`.py`) | ECMAscript (`.mjs`) | CommonJS (`.js`)
 --- | --- | --- | ---
 **GAI**
 GenerativeAI (old) | [`gem25txt-simple-gai-old.py`](/gemini/gem25/gem25txt-simple-gai-old.py) | [`gem25txt-simple-gai-old.mjs`](/gemini/gem25/gem25txt-simple-gai-old.mjs) | [`gem25txt-simple-gai-old.js`](/gemini/gem25/gem25txt-simple-gai-old.js)
-GenAI (current) | [`gem25txt-simple-gai-cur.py`](/gemini/gem25/gem25txt-simple-gai-cur.py) | [`gem25txt-simple-gai-cur.js`](/gemini/gem25/gem25txt-simple-gai-cur.js) | [`gem25txt-simple-gai-cur.mjs`](/gemini/gem25/gem25txt-simple-gai-cur.mjs)
+GenAI (current) | [`gem25txt-simple-gai-cur.py`](/gemini/gem25/gem25txt-simple-gai-cur.py) | [`gem25txt-simple-gai-cur.mjs`](/gemini/gem25/gem25txt-simple-gai-cur.mjs) | [`gem25txt-simple-gai-cur.js`](/gemini/gem25/gem25txt-simple-gai-cur.js)
+"Diffs" | [PNG](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/y37nahk0bxp2nppf2zxg.png) | [PNG](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wx68s8rme8j4smeoqoww.png) | _n/a_
  | | | |
 **GCP**
 VertexAI (old) | [`gem25txt-simple-gcp-old.py`](/gemini/gem25/gem25txt-simple-gcp-old.py) | [`gem25txt-simple-gcp-old.mjs`](/gemini/gem25/gem25txt-simple-gcp-old.mjs) | [`gem25txt-simple-gcp-old.js`](/gemini/gem25/gem25txt-simple-gcp-old.js)
 GenAI (current) | [`gem25txt-simple-gcp-cur.py`](/gemini/gem25/gem25txt-simple-gcp-cur.py) | [`gem25txt-simple-gcp-cur.mjs`](/gemini/gem25/gem25txt-simple-gcp-cur.mjs) | [`gem25txt-simple-gcp-cur.js`](/gemini/gem25/gem25txt-simple-gcp-cur.js)
+"Diffs" | [PNG](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/14i54a1ime2iplc2omf0.png) | [PNG](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5nnd2024hp13sabj9dw7.png) | _n/a_
+
 
 ### Configuration files
 The config files include old & current client library packages and apply to both platforms.
@@ -55,16 +58,14 @@ Settings | [`settings_TMPL.py`](/gemini/gem25/settings_TMPL.py) | [`.env_TMPL`](
 
 
 ## GAI-specific instructions
-
 1. **Set credentials:** [Create API key](https://makersuite.google.com/app/apikey) (or reuse existing one).
 1. Either save the API key to `GEMINI_API_KEY` environment variable or copy the template for your language `.env_TMPL` (Node) or `settings_TMPL.py` (Python) file to `.env` (Node) or `settings.py` (Python) and assign the key to `API_KEY`.
     - If using the `GEMINI_API_KEY` environment variable, simplify the code to not look in `.env` or `settings.py` before running (use commented-out line). (This only affects scripts named `gem25txt-simple-gai-cur.*`.)
 1. Run any of the scripts, e.g., `node gem25txt-simple-gai-old.mjs`, `python3 gem25txt-simple-gai-cur.py`, etc.
 
 ## GCP-specific instructions
-
 1. **Set credentials:** [Login with user auth & set ADC for local dev environment](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment).
     - The new client library supports API keys, so if you prefer this, then follow the GAI instructions above.
-1. Copy the template for your language `.env_TMPL` (Node) or `settings_TMPL.py` (Python) file to `.env` (Node) or `settings.py` (Python) and set the values for `YOUR_GCP_PROJECT` and `YOUR_GCP_REGION`.
+1. Copy the template for your language `.env_TMPL` (Node) or `settings_TMPL.py` (Python) file to `.env` (Node) or `settings.py` (Python) and set the values for `YOUR_GCP_PROJECT` and `YOUR_GCP_REGION`. (See post for more info on these values.)
     - If using an API key instead of ADC, assign it to `API_KEY` in `.env` (Node) or `settings.py` (Python), and update the code to use it before running (use commented-out line). (This only affects scripts named `gem25txt-simple-gcp-cur.*`.)
 1. Run any of the scripts, e.g., `node gem25txt-simple-gcp-cur.js`, `python3 gem25txt-simple-gcp-old.py`, etc.

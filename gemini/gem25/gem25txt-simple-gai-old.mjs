@@ -24,6 +24,7 @@ console.log(`** GenAI text: '${MODEL}' model & prompt '${PROMPT}'\n`);
 
 const GENAI = new GoogleGenerativeAI(process.env.API_KEY);
 const model = GENAI.getGenerativeModel({ model: MODEL });
+
 async function main() {
   const result = await model.generateContent(PROMPT);
   console.log(await result.response.text());
