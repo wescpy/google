@@ -4,9 +4,12 @@
 
 These are the code samples that are found in the [blog post series introducing the Gemini API](https://dev.to/wescpy/series/27183):
 
-1. A _Better_ "Hello World!" sample
+1. A _better_ "Hello World!" sample
 1. Next steps beyond "Hello World!"
 1. Putting together a basic genAI web app
+1. Generate audio tracks
+1. Generate images
+1. New 2.0/2.5 client library (vs. old 1.0/1.5)
 1. _(coming soon)_
 
 Links to each post down below in corresponding row for each code sample. Follow the appropriate instructions in each post to get these apps to run.
