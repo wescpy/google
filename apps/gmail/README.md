@@ -26,7 +26,7 @@ Sample | Description | Tech info
 
 | :memo: Python 2 and 3 supported |
 |:---------------------------|
-| Most of the world is on Python 3 today, but there are still some with dependencies on 2.x that make migration challenging. This is why there's a combo Python 2-3 compatible sample without newer features like `async/await`, type annotations, `f`-strings, etc. There's also a Python 3-only sample with those features for those desiring a more modern version. |
+| Most of the world is on Python 3 today, but there are still some with dependencies on 2.x that make migration challenging. (You should only be using 2.7, the last 2.x release.) This is why there's a combo Python 2-3 compatible sample without newer features like `async/await`, type annotations, `f`-strings, etc. There's also a Python 3-only sample with those features for those desiring a more modern version. For 3.x, 3.9 & newer are recommended. |
 
 
 ## Prerequisites/required setup
@@ -43,17 +43,20 @@ Sample | Description | Tech info
         1. Confirm all the APIs you've enabled with this command: `gcloud services list`
 1. ***Create OAuth client ID & secret [credentials](https://console.cloud.google.com/apis/credentials)*** and save the file to your local filesystem as `client_secret.json`. The code samples **will not run** without this file present.
 1. ***Install the Google APIs client library***:
-    - **NodeJS (16+)**:  Install required packages with this command:
+    - **NodeJS (16+)**:  Install required packages with:
         - `npm i`
-    - **Python 2 or 3 (_new auth_):** In your normal or `virtualenv` environment, run the following command if using the current/new Python auth libraries (most everyone):
+    - **Python 2 or 3 (_new auth_):** In your normal or `virtualenv` environment, install the current/new Python auth libraries (most everyone) with one of these:
         - `pip install -Ur requirements.txt` (or `pip3`)
-    - **Python 2 or 3 (_old auth_):** If you have dependencies on the older Python auth libraries and/or still have old code lying around that do (see warning sidebar below), run this command to ensure you have the latest/last versions of these libraries:
+        - `uv pip install -Ur requirements.txt` (if you use `uv`)
+        - Manually install packages by name (see `requirements.txt`)
+    - **Python 2 or 3 (_old auth_):** If you have dependencies on the older Python auth libraries and/or still have old code lying around that do (see warning sidebar below), run one of these options instead:
         - `pip install -Ur requirements-old.txt` (or `pip3`)
-    - For Python specifically, 2.x means 2.7, and if you're already planning the migration to 3.x, you should **definitely** not be using _anything_ older than 2.6 (as it's the 1st release with 3.x-compatible features). For 3.x, it should work for nearly all releases, but 3.7 or newer are recommended.
+        - `uv pip install -Ur requirements-old.txt` (if you use `uv`)
+        - Manually install packages by name (see `requirements-old.txt`)
 
 | :boom: Caveat: `oauth2client` deprecated |
 |:---------------------------|
-| The older Python auth libraries, primarily `oauth2client`, were [deprecated in 2017](https://github.com/googleapis/oauth2client/pull/714) in favor of modern replacements. However the newer libraries [do not support](https://google-auth.readthedocs.io/en/latest/oauth2client-deprecation.html#replacement) OAuth token storage, hence why the older `*-old.py` samples are generally always shorter than their modern equivalents. For now, `oauth2client` still works, even in maintenance mode, and provides automated, threadsafe, and 2.x/3.x-compatible storage of and access to OAuth2 tokens for users whereas the newer libraries do not (yet). See [this post](https://dev.to/googleworkspace/oauth-client-ids-dirty-little-secrets-old-new-python-auth-libraries-4mb7) to learn more about this change and the "diffs" between using them. |
+| The older Python auth libraries, primarily `oauth2client`, were [deprecated in 2017](https://github.com/googleapis/oauth2client/pull/714) in favor of modern replacements. However the newer libraries [do not support](https://google-auth.readthedocs.io/en/latest/oauth2client-deprecation.html#replacement) OAuth token storage, hence why the older samples (`*-old.py`) are generally shorter than their modern equivalents. For now, `oauth2client` still works, even in maintenance mode, and provides automated, threadsafe, and 2.x/3.x-compatible storage of and access to OAuth2 tokens for users whereas the newer libraries do not (yet). See [this post](https://dev.to/googleworkspace/oauth-client-ids-dirty-little-secrets-old-new-python-auth-libraries-4mb7) to learn more about this change and the "diffs" between using them. |
 
 | :memo: Old service account version in Gmail API documentation |
 |:---------------------------|

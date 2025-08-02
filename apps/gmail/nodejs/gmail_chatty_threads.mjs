@@ -87,7 +87,6 @@ async function gmailThreads(authClient) {
   var res = await GMAIL.users.threads.list({ userId: 'me' });
   const threads = res.data.threads;
   if (!threads || threads.length === 0) return;
-  //console.log(`found ${threads.length} threads`);
 
   for (const thread of threads) {
     var res = await GMAIL.users.threads.get({
@@ -97,7 +96,6 @@ async function gmailThreads(authClient) {
     });
     var tdata = res.data;
     var nmsgs = tdata.messages.length;
-    //console.log(`found ${nmsgs} messages`);
 
     if (nmsgs > 2) {    // dump if <3 msgs in thread
       var msg = tdata.messages[0].payload;

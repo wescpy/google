@@ -43,7 +43,8 @@ GMAIL = discovery.build('gmail', 'v1', credentials=creds)
 threads = GMAIL.users().threads().list(userId='me').execute().get('threads', [])
 for thread in threads:
     # process msgs for a thread
-    tdata = GMAIL.users().threads().get(userId='me', id=thread['id'], format='metadata').execute()
+    tdata = GMAIL.users().threads().get(userId='me',
+            id=thread['id'], format='metadata').execute()
     nmsgs = len(tdata['messages'])
 
     if nmsgs > 2:    # dump if <3 msgs in thread
@@ -54,4 +55,5 @@ for thread in threads:
                 subject = header['value']
                 break
         if subject:  # dump if no Subject line
-            print('-% 3d msgs: %s' % (nmsgs, subject if len(subject)<45 else '%s...' % subject[:42],))
+            print('-% 3d msgs: %s' % (nmsgs,
+                    subject if len(subject)<45 else '%s...' % subject[:42],))
