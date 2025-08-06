@@ -28,6 +28,7 @@ The chart below identifies the code samples and posts covering them:
 Code | Sample | Blog post
 --- | --- | ---
 [`apps/export-doc-pdf/`](/apps/export-doc-pdf) | Export Google Docs as PDF (Node.js & Python) | [Export Google Docs as PDF](https://dev.to/googleworkspace/export-google-docs-as-pdf-without-the-docs-api-9o4)
+[`apps/gmail/`](/apps/gmail) | Query for chatty Gmail threads (Node.js & Python) | [Gmail API developer intro](https://bit.ly/4ljSH2W)
 [`apps/import-csv/`](/apps/import-csv) | Import CSV to Google Sheets (Node.js & Python) | [Import CSV to Google Sheets](https://dev.to/wescpy/import-csv-to-google-sheets-without-the-sheets-api-20g1)
 [`apps/md2docs/`](/apps/md2docs) | Basic Markdown-to-Google Docs converter (Node.js & Python) | [Basic Markdown-to-Google Docs converter](https://dev.to/googleworkspace/building-a-basic-markdown-to-google-docs-converter-1220)
 [`apps/sheets_display.py`](/apps/sheets_display.py) | Display contents of public Sheet | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6)
@@ -45,6 +46,7 @@ Code | Sample | Blog post
 [`gemini/*`](/gemini/) | Google AI Gemini API samples (Node.js & Python) | [Gemini API "Hello World!"](https://dev.to/wescpy/a-better-google-gemini-api-hello-world-sample-4ddm), [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7), [Gemini 2.0 Audio](https://dev.to/wescpy/generate-audio-clips-with-gemini-20-flash-from-google-n0g)
 [`gemini/webgem/`](/gemini/webgem) | Google AI Gemini API web apps (Node.js & Python) | [Gemini 102a: Creating basic gen AI web apps](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3)
 [`gemini/images/`](/gemini/images) | Google AI Gemini API image generation samples (Node.js & Python) | [Generating images with Gemini 2.0 Flash from Google](https://dev.to/wescpy/generating-images-with-gemini-20-flash-from-google-448e)
+[`gemini/gem25/`](/gemini/gem25) | Gemini 2.5 API samples (Node.js & Python) | [Gemini 2.5 API Missing Manual](https://bit.ly/4kFkmLm)
 &nbsp; | &nbsp; | &nbsp;
 [`maps/`](/maps) | Maps Geocoding, Directions, and Time Zone APIs (Node.js & Python) | [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)
 [`maps/maps_geocode.py`](/maps/maps_geocode.py) | Geolocate address with Maps Geocoding API | [API keys 2](https://dev.to/wescpy/getting-started-using-google-apis-api-keys-part-2-38i6) and [Explore the world with Maps APIs](https://dev.to/wescpy/explore-the-world-with-google-maps-apis-lhj)

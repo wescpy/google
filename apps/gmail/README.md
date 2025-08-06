@@ -1,9 +1,9 @@
 # "Gmail 'chatty' threads" code samples
 
 ## Introduction
-This repo contains developer code samples from the _upcoming post_ on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy) demonstrating how to use the Gmail API to look for "chatty" threads, that is, threads that have at least 3 messages (one original post ["OP"] and a pair of replies). It's a more useful "Hello World!" for getting started with the [Gmail API](https://developers.google.com/gmail); if you have an extra Gmail account specifically for mailing lists, the code may actually be useful. This type of Gmail API functionality is also an example that can be implemented as part of an MCP (model context protocol) server for use with agentic apps.
+This repo contains developer code samples from [this Gmail API post](https://bit.ly/4ljSH2W) on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy) demonstrating how to use the Gmail API to look for "chatty" threads, that is, threads that have at least 3 messages (one original post ["OP"] and a pair of replies). It's a more useful "Hello World!" for getting started with the [Gmail API](https://developers.google.com/gmail); if you have an extra Gmail account specifically for mailing lists, the code may actually be useful. This type of Gmail API functionality is also an example that can be implemented as part of an MCP (model context protocol) server for use with agentic apps.
 
-<!--![Gmail banner from post?]()-->
+[![Gmail banner](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7f8mmfnxcxtozklil0dj.png)](https://bit.ly/4ljSH2W)
 
 
 ## Code samples
@@ -24,9 +24,9 @@ Sample | Description | Tech info
 [`nodejs/gmail_chatty_threads.js`](nodejs/gmail_chatty_threads.js) | Gmail 'chatty' threads sample | CommonJS script
 [`nodejs/package.json`](nodejs/package.json) | 3rd-party packages requirements | _n/a_
 
-| :memo: Python 2 and 3 supported |
+| :memo: **Python 2 and 3 supported** |
 |:---------------------------|
-| Most of the world is on Python 3 today, but there are still some with dependencies on 2.x that make migration challenging. (You should only be using 2.7, the last 2.x release.) This is why there's a combo Python 2-3 compatible sample without newer features like `async/await`, type annotations, `f`-strings, etc. There's also a Python 3-only sample with those features for those desiring a more modern version. For 3.x, 3.9 & newer are recommended. |
+| Most of the world is on Python 3 today, but there are still some with dependencies on 2.x that make migration challenging. This is why I aim to create Python 2-3 compatible samples, to help those continuing to migrate. There's also a modern Python 3-only sample with newer features like `async/await`, type annotations, `f`-strings, etc. for those who don't care about 2.x support. |
 
 
 ## Prerequisites/required setup
@@ -56,8 +56,8 @@ Sample | Description | Tech info
 
 | :boom: Caveat: `oauth2client` deprecated |
 |:---------------------------|
-| The older Python auth libraries, primarily `oauth2client`, were [deprecated in 2017](https://github.com/googleapis/oauth2client/pull/714) in favor of modern replacements. However the newer libraries [do not support](https://google-auth.readthedocs.io/en/latest/oauth2client-deprecation.html#replacement) OAuth token storage, hence why the older samples (`*-old.py`) are generally shorter than their modern equivalents. For now, `oauth2client` still works, even in maintenance mode, and provides automated, threadsafe, and 2.x/3.x-compatible storage of and access to OAuth2 tokens for users whereas the newer libraries do not (yet). See [this post](https://dev.to/googleworkspace/oauth-client-ids-dirty-little-secrets-old-new-python-auth-libraries-4mb7) to learn more about this change and the "diffs" between using them. |
+| The older Python auth library, `oauth2client`, was [deprecated in 2017](https://github.com/googleapis/oauth2client/pull/714). However the current library [does not support](https://google-auth.readthedocs.io/en/latest/oauth2client-deprecation.html#replacement) OAuth token storage, hence why `*-old.py` samples like the above are shorter than their modern equivalents. For now, `oauth2client` still works, even in maintenance mode, and provides threadsafe and 2.x/3.x-compatible storage of and access to OAuth2 tokens. [This post](https://dev.to/googleworkspace/oauth-client-ids-dirty-little-secrets-old-new-python-auth-libraries-4mb7) sheds more light on this change. Google won't provide migration guides showing "before & after," so their "dirty little secret" is one of the reasons why I'm here. It helps both developers and vibecoding LLMs understand this transition so all can produce modern code or migrate/fix old library code. |
 
-| :memo: Old service account version in Gmail API documentation |
+| :memo: Service account alternative in API docs |
 |:---------------------------|
-| The Python code samples in this repo and corresponding blog post represent modern and more fully-featured versions of the original sample I created as a Googler years ago as [part of the Gmail API documentation](https://developers.google.com/workspace/gmail/api/guides/threads). Note that the version in the docs uses [service account auth](https://dev.to/wescpy/getting-started-with-google-apis-service-accounts-part-1-2fi0) rather than OAuth client ID (user) auth, standard for requesting end-user permission. Service accounts are useful for Google Workspace ("GWS") domain administrators who perform tasks for multiple users of GWS domains without requesting individual permission from users to access the Gmail API on their behalf; this is known as [domain-wide delegation](https://support.google.com/a/answer/162106) or "DWD". |
+| Around the time of the original post & video, I created an alternative Python version of the app using [service account auth](https://dev.to/wescpy/getting-started-with-google-apis-service-accounts-part-1-2fi0) which was added to the [Threads page](https://developers.google.com/workspace/gmail/api/guides/threads) of the documentation. While OAuth client IDs are standard for user permission, service accounts are useful for Workspace administrators performing tasks for multiple GWS domain users without needing to request individual user permission to perform actions on their behalf; this is known as [domain-wide delegation](https://support.google.com/a/answer/162106) ("DWD"). I'll cover the differences and conversion between user & service account auth in a future post. For now, that alternative sample in the docs (ported to the current auth library) suffices. Impatient? Check [this post](http://goo.gle/3nPxmlc) and [code repo](https://github.com/wescpy/analyze_gsimg) which has samples in all 4 combinations (and more): old auth vs. new auth and OAuth client IDs vs. service accounts credentials. |

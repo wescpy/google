@@ -11,7 +11,7 @@
 # limitations under the License.
 #
 # FILE:    gmail_chatty_threads-old.py
-# POST:    dev.to/googleworkspace/...
+# POST:    https://bit.ly/4ljSH2W
 
 from __future__ import print_function
 
