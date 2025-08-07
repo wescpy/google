@@ -20,20 +20,19 @@ const express = require('express');
 const multer = require('multer');
 const nunjucks = require('nunjucks');
 const sharp = require('sharp');
-const { GoogleGenerativeAI } = require("@google/generative-ai");
+const { GoogleGenAI } = require('@google/genai');
 
 const PORT = process.env.PORT || 8080;
 const ALLOW_EXTS = ['png', 'jpg', 'jpeg', 'gif'];   // allowed types
-const MODEL_NAME = 'gemini-1.5-flash';       // Gemini LLM model
+const MODEL_NAME = 'gemini-2.5-flash';       // Gemini LLM model
 const THUMB_DIMS = [480, 360];                      // thumbnail dimensions
 const JINUN_TMPL = 'index.html';                    // Jinja2/Nunjucks template
 
 const app = express();                              // Express.js application
 app.use(express.urlencoded({ extended: false }));   // querystring parsing
 nunjucks.configure('templates', { autoescape: true, express: app });  // templating
-const upload = multer({ storage: multer.memoryStorage() }); // file uploads
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);  // API key authz
-const model = genAI.getGenerativeModel({ model: MODEL_NAME });  // Gemini
+const upload = multer({ storage: multer.memoryStorage() });     // file uploads
+const GENAI = new GoogleGenAI({ apiKey: process.env.API_KEY }); // API key authz
 
 // check if file (name extension) an allowed file type
 async function is_allowed_file(fname) {
@@ -96,8 +95,11 @@ app.all('/', upload.single('file'), async (req, rsp) => {
         context.prompt = prompt;
         context.image = `data:${mimeType};base64,${thumb_b64}`;
         const payload = { inlineData: { data: image.toString('base64'), mimeType } };
-        const result = await model.generateContent([prompt, payload]);
-        context.result = await result.response.text();
+        const response = await GENAI.models.generateContent({
+            model: MODEL_NAME,
+            contents: [prompt, payload]
+        });
+        context.result = response.text;
     }
     // show only form (GET) or with processed results (POST)
     return rsp.render(JINUN_TMPL, context);

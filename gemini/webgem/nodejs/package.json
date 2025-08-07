@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "nunjucks": "^3.2.4",
+    "sharp": "^0.34.5"
+  }
+}
