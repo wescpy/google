@@ -9,20 +9,20 @@ This repo contains developer code samples from [this Gmail API post](https://bit
 ## Code samples
 The sample apps from the post come in several versions. This table helps you pick one that matches your needs best. Complete the setup & prerequisites below to ensure the samples will run if you haven't already.
 
-Sample | Description | Tech info
---- | --- | ---
-**Python** _(current auth libs)_ ||
-[`python/gmail_chatty_threads.py`](python/gmail_chatty_threads.py) | Gmail 'chatty' threads sample | Python 2 & 3 combo version using current auth libs (`google.auth`)
-[`python/gmail_chatty_threads-3async.py`](python/gmail_chatty_threads-3async.py) | Gmail 'chatty' threads sample | Modern Python 3-only (async, annotated) version using current auth libs (`google.auth`)
-[`python/requirements.txt`](python/requirements.txt) | 3rd-party packages requirements | Current auth libs
-**Python** _(old auth libs)_ ||
-[`python/gmail_chatty_threads-old.py`](python/gmail_chatty_threads-old.py) | Gmail 'chatty' threads sample | Python 2 & 3 combo version using old auth libs (`oauth2client`)
-[`python/requirements-old.txt`](python/requirements-old.txt) | 3rd-party packages requirements | Old auth libs
+Sample | Description
+--- | ---
+**Python** _(current auth libs)_ |
+[`gmail_chatty_threads.py`](python/gmail_chatty_threads.py) | Python 2 & 3 combo version using current auth libs (`google.auth`)
+[`gmail_chatty_threads-3async.py`](python/gmail_chatty_threads-3async.py) | Modern Python 3-only (async, annotated) version using current auth libs (`google.auth`)
+[`requirements.txt`](python/requirements.txt) | 3rd-party packages requirements with current auth libs
+**Python** _(old auth libs)_ |
+[`gmail_chatty_threads-old.py`](python/gmail_chatty_threads-old.py) | Python 2 & 3 combo version using old auth libs (`oauth2client`)
+[`requirements-old.txt`](python/requirements-old.txt) | 3rd-party packages requirements with old auth libs
 ||
-**Node.js**||
-[`nodejs/gmail_chatty_threads.mjs`](nodejs/gmail_chatty_threads.mjs) | Gmail 'chatty' threads sample | ECMAScript module
-[`nodejs/gmail_chatty_threads.js`](nodejs/gmail_chatty_threads.js) | Gmail 'chatty' threads sample | CommonJS script
-[`nodejs/package.json`](nodejs/package.json) | 3rd-party packages requirements | _n/a_
+**Node.js**|
+[`gmail_chatty_threads.mjs`](nodejs/gmail_chatty_threads.mjs) | ECMAScript module
+[`gmail_chatty_threads.js`](nodejs/gmail_chatty_threads.js) | CommonJS script
+[`package.json`](nodejs/package.json) | 3rd-party packages requirements
 
 | :memo: **Python 2 and 3 supported** |
 |:---------------------------|
@@ -30,6 +30,10 @@ Sample | Description | Tech info
 
 
 ## Prerequisites/required setup
+1. ***System requirements***
+    - For Python 2 specifically, that means 2.7 only.
+    - For Python 3, I strongly suggest 3.9 or newer.
+    - For Node.js, I suggest 16 or newer.
 1. ***Create a new project*** [from the Cloud/developer console](https://console.cloud.google.com/projectcreate) or with `gcloud projects create . . .`; or reuse an existing project
 1. ***Enable the Gmail API***. Pick your preferred method of these three common ways to enable APIs:
     - **DevConsole manually** -- Enable the API manually from the DevConsole by following these steps:
