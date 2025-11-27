@@ -19,7 +19,7 @@ Sample | Description
 [`gmail_chatty_threads-old.py`](python/gmail_chatty_threads-old.py) | Python 2 & 3 combo version using old auth libs (`oauth2client`)
 [`requirements-old.txt`](python/requirements-old.txt) | 3rd-party packages requirements with old auth libs
 ||
-**Node**|
+**Node.js**|
 [`gmail_chatty_threads.mjs`](nodejs/gmail_chatty_threads.mjs) | ECMAScript module
 [`gmail_chatty_threads.js`](nodejs/gmail_chatty_threads.js) | CommonJS script
 [`package.json`](nodejs/package.json) | 3rd-party packages requirements
