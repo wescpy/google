@@ -4,7 +4,7 @@ These are the code samples that are found in the [3rd post](https://dev.to/wescp
 
 | :exclamation: API key required |
 |:---------------------------|
-| An API key is required to use Google's Gemini API. Follow the instructions below. The app will ***not*** run without a `.env` file (Node.js) or `settings.py` (Python). (You can alternatively refactor the Python version to use `.env`, similar to Node, but would have to integrate use of `python-dotenv`.) |
+| An API key is required to use Google's Gemini API. Follow the instructions below. The app will ***not*** run without a `.env` file (Node.js) or `settings.py` (Python). (You can alternatively refactor the Python version to use `.env`, similar to Node, but would have to integrate use of `python-dotenv`.) Templates for `.env` and `settings.py` are provided in the repo. |
 
 | :bulb: Deploy this app to GCP serverless platforms |
 |:---------------------------|
@@ -14,11 +14,13 @@ These are the code samples that are found in the [3rd post](https://dev.to/wescp
 ## Code samples
 App | Description | Platform
 --- | --- | ---
+[`nodejs/.env_TMPL`](/gemini/webgem/nodejs/.env_TMPL) | `.env` template | Node.js (all)
 [`nodejs/package.json`](/gemini/webgem/nodejs/package.json) | 3rd-party packages | Node.js (all)
 [`nodejs/main.js`](/gemini/webgem/nodejs/main.js) | Express.js sample app | Node.js (CommonJS)
 [`nodejs/main.mjs`](/gemini/webgem/nodejs/main.mjs) | Express.js sample app | Node.js (modern JS/ECMAScript module)
 [`nodejs/templates/index.html`](/gemini/webgem/nodejs/templates/index.html) | Web template | Nunjucks (identical to Jinja2)
  | |
+[`python/settings_TMPL.py`](/gemini/webgem/python/settings_TMPL.py) | `settings.py` template | Python 3
 [`python/requirements.txt`](/gemini/webgem/python/requirements.txt) | 3rd-party packages | Python 3
 [`python/main.py`](/gemini/webgem/python/main.py) | Flask sample app | Python 3
 [`python/templates/index.html`](/gemini/webgem/python/templates/index.html) | Web template | Jinja2 (identical to Nunjucks)
@@ -48,4 +50,4 @@ App | Description | Platform
 
 | :memo: Gemini API also accessible from GCP Vertex AI |
 |:---------------------------|
-| While these sample apps access the Gemini API from Google AI, a great place for beginners and those experimenting with it, the API is also accessible from GCP's Vertex AI platform for those ready to use Gemini for production workloads. To learn more about calling the Gemini API from either (or both) places, see [this post](https://bit.ly/4kFkmLm).
+| While these sample apps access the Gemini API from Google AI, a great place for beginners and those experimenting with it, the API is also accessible from GCP's Vertex AI platform for those ready to use Gemini for production workloads. To learn more about calling the Gemini API from either (or both) places, see [this post](https://bit.ly/4kFkmLm). The `.env_TMPL` and `settings_TMPL.py` files have placeholders for the required GCP information to call the Gemini API from the Vertex AI platform. |
