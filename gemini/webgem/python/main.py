@@ -33,7 +33,7 @@ JINUN_TMPL = 'index.html'               # Jinja2/Nunjucks template
 app = Flask(__name__)                   # Flask application
 GENAI = genai.Client(api_key=API_KEY)   # API key authz
 
-def is_allowed_file(fname: str) -> bool:
+def is_allowed_file(fname):
     'check if file (name extension) an allowed file type'
     return '.' in fname and fname.rsplit('.', 1)[1].lower() in ALLOW_EXTS
 
