@@ -42,7 +42,7 @@ def is_allowed_file(fname: str) -> bool:
 
 
 @app.post('/')
-def process_form(request: Request,
+async def process_form(request: Request,
                   file: UploadFile = File(...),
                   prompt: str = Form(...)):
     'application POST handler processes file upload & prompt'
@@ -97,12 +97,11 @@ def process_form(request: Request,
 
 
 @app.get('/')
-def display_form(request: Request):
+async def display_form(request: Request):
     'application GET handler displays empty form'
     # set template context with required values & show form
     context: dict = {'upload_url': '/', 'request': request}
     return templates.TemplateResponse(JINUN_TMPL, context)
-
 
 
 if __name__ == '__main__':

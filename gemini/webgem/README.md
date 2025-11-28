@@ -21,9 +21,12 @@ App | Description | Platform
 [`nodejs/templates/index.html`](/gemini/webgem/nodejs/templates/index.html) | Web template | Nunjucks (identical to Jinja2)
  | |
 [`python/settings_TMPL.py`](/gemini/webgem/python/settings_TMPL.py) | `settings.py` template | Python 3
-[`python/requirements.txt`](/gemini/webgem/python/requirements.txt) | 3rd-party packages | Python 3
+[`python/requirements.txt`](/gemini/webgem/python/requirements.txt) | Flask 3rd-party packages | Python 3
 [`python/main.py`](/gemini/webgem/python/main.py) | Flask sample app | Python 3
 [`python/templates/index.html`](/gemini/webgem/python/templates/index.html) | Web template | Jinja2 (identical to Nunjucks)
+ | |
+[`python/fastapi/main.py`](/gemini/webgem/python/fastapi/main.py) | FastAPI sample app | Python 3
+[`python/fastapi/requirements.txt`](/gemini/webgem/python/fastapi/requirements.txt) | FastAPI 3rd-party packages | Python 3
 
 
 ## Instructions
