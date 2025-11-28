@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    main.py
-# POST:    dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3
+# POST:    bit.ly/3Kqv78c
 
 from base64 import b64encode
 import io

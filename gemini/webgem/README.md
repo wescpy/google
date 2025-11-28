@@ -1,6 +1,6 @@
 # Google Gemini API web app samples
 
-These are the code samples that are found in the [3rd post](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3) in the [Gemini API series](https://dev.to/wescpy/series/27183).
+These are the code samples that are found in the [3rd post](https://bit.ly/3Kqv78c) in the [Gemini API series](https://dev.to/wescpy/series/27183).
 
 | :exclamation: API key required |
 |:---------------------------|

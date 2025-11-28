@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    main.py
-# POST:    dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3
+# POST:    bit.ly/3Kqv78c
 
 from base64 import b64encode
 import io
@@ -21,7 +21,6 @@ import io
 from fastapi import FastAPI, Request, UploadFile, File, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-from werkzeug.utils import secure_filename
 from PIL import Image
 
 from google import genai

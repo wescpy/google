@@ -44,7 +44,7 @@ Code | Sample | Blog post
 [`cloud/transnatlang/`](/cloud/transnatlang) | Text-based language processing (Node.js & Python) | [Text-based language processing](https://dev.to/wescpy/text-based-language-processing-enhanced-with-aiml-1b1h)
 &nbsp; | &nbsp; | &nbsp;
 [`gemini/*`](/gemini/) | Google AI Gemini API samples (Node.js & Python) | [Gemini API "Hello World!"](https://dev.to/wescpy/a-better-google-gemini-api-hello-world-sample-4ddm), [Gemini 102: Beyond "Hello World!"](https://dev.to/wescpy/gemini-api-102-next-steps-beyond-hello-world-1pb7), [Gemini 2.0 Audio](https://dev.to/wescpy/generate-audio-clips-with-gemini-20-flash-from-google-n0g)
-[`gemini/webgem/`](/gemini/webgem) | Google AI Gemini API web apps (Node.js & Python) | [Gemini 102a: Creating basic gen AI web apps](https://dev.to/wescpy/gemini-api-102a-putting-together-a-basic-genai-web-app-3e3)
+[`gemini/webgem/`](/gemini/webgem) | Google AI Gemini API web apps (Node.js & Python) | [Gemini 102a: Creating basic gen AI web apps](http://bit.ly/3Kqv78c)
 [`gemini/images/`](/gemini/images) | Google AI Gemini API image generation samples (Node.js & Python) | [Generating images with Gemini 2.0 Flash from Google](https://dev.to/wescpy/generating-images-with-gemini-20-flash-from-google-448e)
 [`gemini/gem25/`](/gemini/gem25) | Gemini 2.5 API samples (Node.js & Python) | [Gemini 2.5 API Missing Manual](https://bit.ly/4kFkmLm)
 &nbsp; | &nbsp; | &nbsp;
