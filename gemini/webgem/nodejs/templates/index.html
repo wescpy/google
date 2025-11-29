@@ -1,9 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 <head>
 <title>GenAI image analyzer serverless example (Express)</title>
-</head>
-<body>
 
 <style>
 body {
@@ -11,35 +9,42 @@ body {
   background-color: #DDDDDD;
 }
 </style>
+</head>
+<body>
 
-<h1>GenAI basic image analyzer (v0.4)</h1>
+<h1>GenAI basic image analyzer (v0.5)</h1>
 
 {% if error %}
-    <h3>Error on previous request</h3>
-    <p style="color: red;">{{ error }}</p>
-    <hr>
+  <h3>Error on previous request</h3>
+  <p style="color: red;">{{ error }}</p>
+  <hr>
 {% endif %}
 
 {% if result and image %}
-    <h3>Image uploaded</h3>
-    <img src="{{ image }}" />
+  <h3>Image uploaded</h3>
+  <img src="{{ image }}" alt="thumbnail">
 
-    <h3>LLM analysis</h3>
-    <b>Prompted received:</b> {{ prompt }}<p></p>
-    <b>Model used:</b> {{ model }}<p></p>
-    <b>Model response:</b> {{ result }}<p></p>
-    <hr>
+  <h3>LLM analysis</h3>
+  <b>Prompt received:</b> {{ prompt }}<p></p>
+  <b>Model used:</b> {{ model }}<p></p>
+  <b>Model response:</b> {{ result|safe }}<p></p>
+  <hr>
 {% endif %}
 
 <h3>Analyze an image</h3>
 
-<form action="{{ upload_url }}" method="POST" enctype="multipart/form-data">
-    <label for="file">Upload image to analyze:</label><br>
-    <input type="file" name="file"><p></p>
-    <label for="prompt">Image prompt for LLM:</label><br>
-    <input type="text" name="prompt" value="Describe this image"><p></p>
-    <input type="submit">
+<form action="{{ upload_url }}" onsubmit="submitted()" method="POST" enctype="multipart/form-data">
+  <label for="file">Upload image to analyze:</label><br>
+  <input type="file" name="file"><p></p>
+  <label for="prompt">Image prompt for LLM:</label><br>
+  <input type="text" name="prompt" value="Describe this image"><p></p>
+  <input type="submit" id="submit">
 </form>
 
+<script>
+function submitted() {
+  document.getElementById("submit").value = "Processing...";
+}
+</script>
 </body>
 </html>

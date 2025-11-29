@@ -13,13 +13,14 @@
 // limitations under the License.
 //
 // FILE:    main.js
-// POST:    bit.ly/3Kqv78c
+// POST:    bit.ly/3Kqv78c and bit.ly/TBD
 
 require('dotenv').config();
 const express = require('express');
 const multer = require('multer');
 const nunjucks = require('nunjucks');
 const sharp = require('sharp');
+const marked = require('marked');
 const { GoogleGenAI } = require('@google/genai');
 
 const PORT = process.env.PORT || 8080;
@@ -99,7 +100,7 @@ app.all('/', upload.single('file'), async (req, rsp) => {
             model: MODEL_NAME,
             contents: [prompt, payload]
         });
-        context.result = response.text;
+        context.result = marked.parse(response.text);
     }
     // show only form (GET) or with processed results (POST)
     return rsp.render(JINUN_TMPL, context);

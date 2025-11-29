@@ -40,7 +40,7 @@ App | Description | Platform
 1. Run `node main.js` or `node main.mjs`
 
 ### Python
-The Python app is available in two flavors, the original Flask (synchronous) version, or a FastAPI async version. For the latter, grab the files from the [`fastapi` subfolder](](/gemini/webgem/python/fastapi) and overwrite their Flask equivalents in the main folder.
+The Python app is available in two flavors, the original Flask (synchronous) version, or a FastAPI async version. For the latter, grab the files from the [`fastapi` subfolder](/gemini/webgem/python/fastapi) and overwrite their Flask equivalents in the main folder.
 1. Ensure your Python (and `pip`) installation is up-to-date (recommend 3.9+)
 1. `cd python`
 1. (optional) [Create & activate a virtual environment ("virtualenv") for isolation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments)
