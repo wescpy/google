@@ -1,6 +1,6 @@
 # Google Gemini API web app samples
 
-These are the code samples that are found in the [3rd post](https://bit.ly/3Kqv78c) in the [Gemini API series](https://dev.to/wescpy/series/27183).
+These are the code samples from the [3rd post](https://bit.ly/3Kqv78c) in the [Gemini API series](https://dev.to/wescpy/series/27183).
 
 | :exclamation: API key required |
 |:---------------------------|
@@ -14,13 +14,13 @@ These are the code samples that are found in the [3rd post](https://bit.ly/3Kqv7
 ## Code samples
 App | Description | Platform
 --- | --- | ---
-[`nodejs/.env_TMPL`](/gemini/webgem/nodejs/.env_TMPL) | `.env` template | Node.js (all)
+[`nodejs/.env_TMPL`](/gemini/webgem/nodejs/.env_TMPL) | `.env` environment settings template | Node.js (all)
 [`nodejs/package.json`](/gemini/webgem/nodejs/package.json) | 3rd-party packages | Node.js (all)
 [`nodejs/main.js`](/gemini/webgem/nodejs/main.js) | Express.js sample app | Node.js (CommonJS)
 [`nodejs/main.mjs`](/gemini/webgem/nodejs/main.mjs) | Express.js sample app | Node.js (modern JS/ECMAScript module)
 [`nodejs/templates/index.html`](/gemini/webgem/nodejs/templates/index.html) | Web template | Nunjucks (identical to Jinja2)
  | |
-[`python/settings_TMPL.py`](/gemini/webgem/python/settings_TMPL.py) | `settings.py` template | Python 3
+[`python/settings_TMPL.py`](/gemini/webgem/python/settings_TMPL.py) | `settings.py` environment settings template | Python 3
 [`python/requirements.txt`](/gemini/webgem/python/requirements.txt) | Flask 3rd-party packages | Python 3
 [`python/main.py`](/gemini/webgem/python/main.py) | Flask sample app | Python 3
 [`python/templates/index.html`](/gemini/webgem/python/templates/index.html) | Web template | Jinja2 (identical to Nunjucks)
@@ -40,7 +40,7 @@ App | Description | Platform
 1. Run `node main.js` or `node main.mjs`
 
 ### Python
-
+The Python app is available in two flavors, the original Flask (synchronous) version, or a FastAPI async version. For the latter, grab the files from the [`fastapi` subfolder](](/gemini/webgem/python/fastapi) and overwrite their Flask equivalents in the main folder.
 1. Ensure your Python (and `pip`) installation is up-to-date (recommend 3.9+)
 1. `cd python`
 1. (optional) [Create & activate a virtual environment ("virtualenv") for isolation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-and-use-virtual-environments)

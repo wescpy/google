@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    main.py
-# POST:    bit.ly/3Kqv78c
+# POST:    bit.ly/3Kqv78c and bit.ly/TBD
 
 from base64 import b64encode
 import io
@@ -22,6 +22,7 @@ from fastapi import FastAPI, Request, UploadFile, File, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from PIL import Image
+import mistune
 
 from google import genai
 from settings import API_KEY    # can also use .env & python-dotenv
@@ -88,8 +89,8 @@ async def process_form(request: Request,
     context['prompt'] = prompt
     thumb_b64 = b64encode(img_io.getvalue()).decode('ascii')
     context['image']  = f'data:{file.content_type};base64,{thumb_b64}'
-    context['result'] = GENAI.models.generate_content(
-            model=MODEL_NAME, contents=(prompt, image)).text
+    context['result'] = mistune.html(GENAI.models.generate_content(
+            model=MODEL_NAME, contents=(prompt, image)).text)
 
     # show processed results (POST)
     return templates.TemplateResponse(JINUN_TMPL, context)
@@ -104,6 +105,7 @@ async def display_form(request: Request):
 
 
 if __name__ == '__main__':
+    import os
     import uvicorn
     uvicorn.run('main:app', host='0.0.0.0', reload=True,
                 port=int(os.environ.get('PORT', 8080)))

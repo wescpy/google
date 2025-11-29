@@ -1,3 +1,4 @@
 flask
+mistune
 pillow
 google-genai

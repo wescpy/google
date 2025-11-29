@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    main.py
-# POST:    bit.ly/3Kqv78c
+# POST:    bit.ly/3Kqv78c and bit.ly/TBD
 
 from base64 import b64encode
 import io
@@ -21,6 +21,7 @@ import io
 from flask import Flask, render_template, request, url_for
 from werkzeug.utils import secure_filename
 from PIL import Image
+import mistune
 
 from google import genai
 from settings import API_KEY    # can also use .env & python-dotenv
@@ -87,8 +88,8 @@ def main():
         context['prompt'] = prompt
         thumb_b64 = b64encode(img_io.getvalue()).decode('ascii')
         context['image']  = f'data:{upload.mimetype};base64,{thumb_b64}'
-        context['result'] = GENAI.models.generate_content(
-                model=MODEL_NAME, contents=(prompt, image)).text
+        context['result'] = mistune.html(GENAI.models.generate_content(
+                model=MODEL_NAME, contents=(prompt, image)).text)
 
     # show only form (GET) or with processed results (POST)
     return render_template(JINUN_TMPL, **context)
