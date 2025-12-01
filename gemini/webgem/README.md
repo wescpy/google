@@ -12,12 +12,12 @@ These are the code samples from the [3rd post](https://bit.ly/3Kqv78c) in the [G
 
 
 ## Code samples
-App | Description | Platform
+File | Description | Platform
 --- | --- | ---
-[`nodejs/.env_TMPL`](/gemini/webgem/nodejs/.env_TMPL) | `.env` environment settings template | Node.js (all)
-[`nodejs/package.json`](/gemini/webgem/nodejs/package.json) | 3rd-party packages | Node.js (all)
-[`nodejs/main.js`](/gemini/webgem/nodejs/main.js) | Express.js sample app | Node.js (CommonJS)
-[`nodejs/main.mjs`](/gemini/webgem/nodejs/main.mjs) | Express.js sample app | Node.js (modern JS/ECMAScript module)
+[`nodejs/.env_TMPL`](/gemini/webgem/nodejs/.env_TMPL) | `.env` environment settings template | Node
+[`nodejs/package.json`](/gemini/webgem/nodejs/package.json) | 3rd-party packages | Node
+[`nodejs/main.js`](/gemini/webgem/nodejs/main.js) | Express.js sample app | Node (CommonJS script)
+[`nodejs/main.mjs`](/gemini/webgem/nodejs/main.mjs) | Express.js sample app | Node (ECMAScript module)
 [`nodejs/templates/index.html`](/gemini/webgem/nodejs/templates/index.html) | Web template | Nunjucks (identical to Jinja2)
  | |
 [`python/settings_TMPL.py`](/gemini/webgem/python/settings_TMPL.py) | `settings.py` environment settings template | Python 3
@@ -25,8 +25,8 @@ App | Description | Platform
 [`python/main.py`](/gemini/webgem/python/main.py) | Flask sample app | Python 3
 [`python/templates/index.html`](/gemini/webgem/python/templates/index.html) | Web template | Jinja2 (identical to Nunjucks)
  | |
-[`python/fastapi/main.py`](/gemini/webgem/python/fastapi/main.py) | FastAPI sample app | Python 3
 [`python/fastapi/requirements.txt`](/gemini/webgem/python/fastapi/requirements.txt) | FastAPI 3rd-party packages | Python 3
+[`python/fastapi/main.py`](/gemini/webgem/python/fastapi/main.py) | FastAPI sample app | Python 3
 
 
 ## Instructions
