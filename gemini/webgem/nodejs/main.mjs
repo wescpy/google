@@ -13,7 +13,7 @@
 // limitations under the License.
 //
 // FILE:    main.mjs
-// POST:    bit.ly/3Kqv78c and bit.ly/TBD
+// POST:    bit.ly/3Kqv78c and bit.ly/48dnMSv
 
 import 'dotenv/config';
 import express from 'express';

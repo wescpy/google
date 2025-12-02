@@ -1,9 +1,9 @@
 # "Gmail 'chatty' threads" code samples
 
 ## Introduction
-This repo contains developer code samples from [this Gmail API post](https://bit.ly/4ljSH2W) on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy) demonstrating how to use the Gmail API to look for "chatty" threads, that is, threads that have at least 3 messages (one original post ["OP"] and a pair of replies). It's a more useful "Hello World!" for getting started with the [Gmail API](https://developers.google.com/gmail); if you have an extra Gmail account specifically for mailing lists, the code may actually be useful. This type of Gmail API functionality is also an example that can be implemented as part of an MCP (model context protocol) server for use with agentic apps.
+This repo contains developer code samples from [this Gmail API post](http://bit.ly/4ljSH2W) on the [**Coding #Python and #Google with @wescpy** blog](https://dev.to/wescpy) demonstrating how to use the Gmail API to look for "chatty" threads, that is, threads that have at least 3 messages (one original post ["OP"] and a pair of replies). It's a more useful "Hello World!" for getting started with the [Gmail API](https://developers.google.com/gmail); if you have an extra Gmail account specifically for mailing lists, the code may actually be useful. This type of Gmail API functionality is also an example that can be implemented as part of an MCP (model context protocol) server for use with agentic apps.
 
-[![Gmail banner](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7f8mmfnxcxtozklil0dj.png)](https://bit.ly/4ljSH2W)
+[![Gmail banner](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7f8mmfnxcxtozklil0dj.png)](http://bit.ly/4ljSH2W)
 
 
 ## Code samples

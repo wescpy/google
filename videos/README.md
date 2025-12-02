@@ -13,13 +13,13 @@ Content is broken up by product, topic, and/or category. Hold Ctrl/Command and m
 - [Google APIs in general](#google-apis-in-general)
 - [Google Workspace / GWS](#google-workspace--gws-gmail-google-drive-docs-sheets-slides-etc) (Gmail, Google Drive, Docs, Sheets, Slides, etc.)
     - [GWS general/platform or multiple API samples](#gws-generalplatform-or-multiple-api-samples)
-    - [Google Apps Script](#google-apps-script-playlist) ([playlist](https://bit.ly/wescpy-appsscript-vids))
-    - [Google Drive API](#google-drive-api-playlist) ([playlist](https://bit.ly/wescpy-drive-api-vids))
+    - [Google Apps Script](#google-apps-script-playlist) ([playlist](http://bit.ly/wescpy-appsscript-vids))
+    - [Google Drive API](#google-drive-api-playlist) ([playlist](http://bit.ly/wescpy-drive-api-vids))
     - [Gmail API](#gmail-api-playlist-tbd) (playlist _tbd_)
     - [Google Calendar API](#google-calendar-api-playlist-tbd) (playlist _tbd_)
     - [Google Sheets API](#google-sheets-api-playlist) ([playlist](http://bit.ly/wescpy-sheets-api-vids))
     - [Google Slides API](#google-slides-api-playlist) ([playlist](http://bit.ly/wescpy-slides-api-vids))
-    - [Google Chat API and bot/app platform](#google-chat-api-and-botapp-platform-playlist) ([playlist](https://bit.ly/wescpy-chat-api-vids))
+    - [Google Chat API and bot/app platform](#google-chat-api-and-botapp-platform-playlist) ([playlist](http://bit.ly/wescpy-chat-api-vids))
     - [Google Forms API](#google-forms-api)
 - [GWS and GCP interoperability](#gws-and-gcp-interoperability-playlist-tbd) (playlist _tbd_)
 - [GCP general and multiple GCP products](#gcp-general-and-multiple-gcp-products)
@@ -53,7 +53,7 @@ Video | Title | Link(s) | Description | Featured API(s), product(s), feature(s)
 [![Watch video](https://i.ytimg.com/vi/2VpvWhDdXsI/default.jpg)](https://youtu.be/2VpvWhDdXsI) | Accessing Workspace (formerly G Suite) REST APIs | [post](http://goo.gle/3ateIIQ) | Accessing GWS REST APIs intro for Student Developers | _(tbd)_
 
 
-#### Google Apps Script ([playlist](https://bit.ly/wescpy-appsscript-vids))
+#### Google Apps Script ([playlist](http://bit.ly/wescpy-appsscript-vids))
 Video | Title | Link(s) | Description | Other featured APIs/tools
 --- | --- | --- | --- | ---
 [![Watch video](https://i.ytimg.com/vi/vlvIa4DxiLw/default.jpg)](https://youtu.be/vlvIa4DxiLw) | Another Google (Apps) secret? | _(n/a)_ | Basic Apps Script intro
@@ -66,7 +66,7 @@ Video | Title | Link(s) | Description | Other featured APIs/tools
 [![Watch video](https://i.ytimg.com/vi/L33hMxuoFtM/default.jpg)](https://youtu.be/L33hMxuoFtM) | Auto-generating Google Forms | [post](http://goo.gl/EK5edG) | How to automatically generate Google Forms | Forms API
 
 
-#### Google Drive API ([playlist](https://bit.ly/wescpy-drive-api-vids))
+#### Google Drive API ([playlist](http://bit.ly/wescpy-drive-api-vids))
 Video | Title | Link(s) | Description | Other featured APIs/tools
 --- | --- | --- | --- | ---
 [![Watch video](https://i.ytimg.com/vi/Z5G0luBohCg/default.jpg)](https://youtu.be/Z5G0luBohCg) | Listing your files in Google Drive | [post 1](https://developers.googleblog.com/2014/11/launchpad-online-for-developers-getting.html), [post 2](http://wescpy.blogspot.com/2014/11/authorized-google-api-access-from-python.html), [codelab](http://g.co/codelabs/gsuite-apis-intro), [source](https://github.com/wescpy/gsuite-apis-intro) | Basic GWS API script
@@ -110,7 +110,7 @@ Video | Title | Link(s) | Description | Other featured APIs/tools
 [![Watch video](https://i.ytimg.com/vi/mKuINIBrR1g/default.jpg)](https://youtu.be/mKuINIBrR1g) | Making progress (bars) with Slides Add-ons | [post](http://goo.gl/69EJVw) | Adds a "progress bars" feature to Google Slides | Apps Script
 
 
-#### Google Chat API and bot/app platform ([playlist](https://bit.ly/wescpy-chat-api-vids))
+#### Google Chat API and bot/app platform ([playlist](http://bit.ly/wescpy-chat-api-vids))
 Video | Title | Link(s) | Description | Other featured APIs/tools
 --- | --- | --- | --- | ---
 [![Watch video](https://i.ytimg.com/vi/ESSB3GvE9e0/default.jpg)](https://youtu.be/ESSB3GvE9e0) | The bots are coming! | [post](http://goo.gl/jt3FqK) | Developing chat bots/apps | Apps Script, App Engine
@@ -208,9 +208,9 @@ Video Series | Info link | Intended audience (but open to all)
 [Workspace (GWS; formerly G Suite) Dev Show](http://goo.gl/JpBQ40) | [Tweet](https://twitter.com/googledevs/status/796383831188275200) | Gmail, Google Drive, Docs, and Sheets APIs users
 [Serverless Migration Station](http://bit.ly/3xk2Swi) | [post](http://goo.gle/3h0GnFw) | Python 2 App Engine users seeking to upgrade
 [Google Cloud for Student Developers](http://goo.gle/GCPStudent) | [page](https://cloud.google.com/edu/students) | student (and all) developers
-[Google Apps Script](https://bit.ly/wescpy-appsscript-vids) | (deprecated) [page](https://web.archive.org/web/20220929161227/https://developers.google.com/apps-script/guides/videos) | Serverless platform for enhancing, extending, and automating GWS, other Google, and _non-Google_ resources
-[Google Drive](https://bit.ly/wescpy-drive-api-vids) | [page](http://developers.google.com/drive/web/videos) | Drive API users
+[Google Apps Script](http://bit.ly/wescpy-appsscript-vids) | (deprecated) [page](https://web.archive.org/web/20220929161227/https://developers.google.com/apps-script/guides/videos) | Serverless platform for enhancing, extending, and automating GWS, other Google, and _non-Google_ resources
+[Google Drive](http://bit.ly/wescpy-drive-api-vids) | [page](http://developers.google.com/drive/web/videos) | Drive API users
 [Google Slides](http://bit.ly/wescpy-slides-api-vids) | [page](http://developers.google.com/slides/videos) | Slides API users
 [Google Sheets](http://bit.ly/wescpy-sheets-api-vids) | [page](http://developers.google.com/sheets/api/videos) | Sheets API users
-[Google Chat](https://bit.ly/wescpy-chat-api-vids) | (deprecated) [page](https://web.archive.org/web/20210618140718/https://developers.google.com/chat#featured-videos) | Chat bot/app platform developers
+[Google Chat](http://bit.ly/wescpy-chat-api-vids) | (deprecated) [page](https://web.archive.org/web/20210618140718/https://developers.google.com/chat#featured-videos) | Chat bot/app platform developers
 Gmail (_tbd_) | [page](https://developers.google.com/gmail/videos) | Gmail API users

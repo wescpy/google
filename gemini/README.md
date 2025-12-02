@@ -34,4 +34,4 @@ Link | App | Description | Platform | Model | Language
 [Post 3](http://bit.ly/3Kqv78c) | [`webgem/*`](/gemini/webgem/) |  Multimodal (uploaded image) | Google AI | Gemini 2.5 Flash | Python & Node.js (CJS-only)
 [Post 4](https://dev.to/wescpy/generate-audio-clips-with-gemini-20-flash-from-google-n0g) | [`gem20-audio.py`](/gemini/gem20-audio.py) | Generate audio tracks | Google AI | Gemini 2.0 Flash (experimental) | Python 3
 [Post 5](https://dev.to/wescpy/generating-images-with-gemini-20-flash-from-google-448e) | [`images/*`](/gemini/images) | Generate images | Google AI | Gemini 2.0 Flash (experimental) | Python 3 & Node.js (CJS & ESM)
-[Post 6](https://bit.ly/4kFkmLm) | [`gem25/*`](/gemini/gem25) | Gemini 2.5 old vs. current client libraries | Google AI & GCP Vertex AI | Gemini 2.5 Flash | Python 3 & Node.js (CJS & ESM)
+[Post 6](http://bit.ly/4kFkmLm) | [`gem25/*`](/gemini/gem25) | Gemini 2.5 old vs. current client libraries | Google AI & GCP Vertex AI | Gemini 2.5 Flash | Python 3 & Node.js (CJS & ESM)

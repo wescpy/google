@@ -11,7 +11,7 @@
 # limitations under the License.
 #
 # FILE:    gmail_chatty_threads.py
-# POST:    https://bit.ly/4ljSH2W
+# POST:    bit.ly/4ljSH2W
 
 from __future__ import print_function
 import os

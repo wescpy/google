@@ -11,7 +11,7 @@
 // limitations under the License.
 //
 // FILE:    gmail_chatty_threads.mjs
-// POST:    https://bit.ly/4ljSH2W
+// POST:    bit.ly/4ljSH2W
 
 import fs from 'node:fs/promises';
 import path from 'node:path';

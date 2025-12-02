@@ -11,7 +11,7 @@
 // limitations under the License.
 //
 // FILE:    gmail_chatty_threads.js
-// POST:    https://bit.ly/4ljSH2W
+// POST:    bit.ly/4ljSH2W
 
 const fs = require('fs').promises;
 const path = require('path');

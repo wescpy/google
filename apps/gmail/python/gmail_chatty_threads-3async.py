@@ -11,7 +11,7 @@
 # limitations under the License.
 #
 # FILE:    gmail_chatty_threads-3async.py
-# POST:    https://bit.ly/4ljSH2W
+# POST:    bit.ly/4ljSH2W
 
 import asyncio
 import os

@@ -13,7 +13,7 @@
 # limitations under the License.
 #
 # FILE:    settings_TMPL.py
-# POST:    bit.ly/4kFkmLm and bit.ly/3Kqv78c and bit.ly/TBD
+# POST:    bit.ly/4kFkmLm and bit.ly/3Kqv78c and bit.ly/48dnMSv
 
 API_KEY = 'YOUR_API_KEY'
 GCP_METADATA = {

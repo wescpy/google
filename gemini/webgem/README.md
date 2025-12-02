@@ -1,6 +1,6 @@
 # Google Gemini API web app samples
 
-These are the code samples from the [3rd post](https://bit.ly/3Kqv78c) in the [Gemini API series](https://dev.to/wescpy/series/27183).
+These are the code samples from the [3rd post](http://bit.ly/3Kqv78c) in the [Gemini API series](https://dev.to/wescpy/series/27183).
 
 | :exclamation: API key required |
 |:---------------------------|
@@ -53,4 +53,4 @@ The Python app is available in two flavors, the original Flask (synchronous) ver
 
 | :memo: Gemini API also accessible from GCP Vertex AI |
 |:---------------------------|
-| While these sample apps access the Gemini API from Google AI, a great place for beginners and those experimenting with it, the API is also accessible from GCP's Vertex AI platform for those ready to use Gemini for production workloads. To learn more about calling the Gemini API from either (or both) places, see [this post](https://bit.ly/4kFkmLm). The `.env_TMPL` and `settings_TMPL.py` files have placeholders for the required GCP information to call the Gemini API from the Vertex AI platform. |
+| While these sample apps access the Gemini API from Google AI, a great place for beginners and those experimenting with it, the API is also accessible from GCP's Vertex AI platform for those ready to use Gemini for production workloads. To learn more about calling the Gemini API from either (or both) places, see [this post](http://bit.ly/4kFkmLm). The `.env_TMPL` and `settings_TMPL.py` files have placeholders for the required GCP information to call the Gemini API from the Vertex AI platform. |
